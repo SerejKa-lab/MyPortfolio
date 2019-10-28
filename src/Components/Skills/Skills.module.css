@@ -9,6 +9,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   border: 1px solid;
   width: 80%;
 }
@@ -22,4 +23,11 @@
 
 .skills .container span {
   text-align: center;
+}
+
+.blockHeader {
+  align-self: center;
+  font-size: 25px;
+  background-color: rgb(248, 250, 121);
+  margin: 10px;
 }

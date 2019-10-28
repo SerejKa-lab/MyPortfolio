@@ -3,16 +3,26 @@
     background-color: rgb(255, 213, 122);
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     width: 80%;
+}
+
+.projectsContainer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     border: 1px solid white;
 }
 
+.header {
+    align-self: center;
+    font-size: 25px;
+    background-color: gainsboro;
+    margin: 10px;
+}
 
 
