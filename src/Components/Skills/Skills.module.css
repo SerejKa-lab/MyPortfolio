@@ -1,0 +1,25 @@
+.skills {
+  background-color: rgb(255, 255, 143);
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  width: 80%;
+}
+
+.skillsBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid rgb(252, 32, 179)
+}
+
+.skills .container span {
+  text-align: center;
+}

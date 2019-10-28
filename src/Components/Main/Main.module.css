@@ -1,0 +1,29 @@
+.main {
+  background-color: rgb(255, 213, 122);
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main img {
+  max-width: 60%;
+  margin: 10px;
+}
+
+.container {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid;
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}

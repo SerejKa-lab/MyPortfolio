@@ -1,0 +1,38 @@
+.footer {
+  background-color: rgb(159, 207, 170);
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 70%;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.linksBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  background-color: gainsboro;
+  text-align: center;
+  font-size: 25px;
+  margin: 10px 5px;
+}
+
+.name {
+  background-color: gainsboro;
+}
+
+.copyright {
+  background-color: gainsboro;
+  text-align: center;
+}

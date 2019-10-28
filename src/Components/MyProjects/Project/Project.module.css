@@ -1,0 +1,55 @@
+.project {
+    display: block;
+    border: 1px solid rgb(231, 43, 43);
+    width: 100%;
+    max-width: 450px;
+    margin: 10px 0;
+}
+
+.projectReview {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(199, 198, 198);
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://s.tmimgcdn.com/scr/28200/28212-original.jpg);
+}
+
+.projectReview button{
+    font-size: 25px;
+    background-color: rgba(127, 250, 90, 0.507); 
+}
+
+.projectReview img {
+    max-width: 40%;
+
+}
+
+.desctiption {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+}
+
+.desctiptionBox {
+    min-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.descriptionTitle {
+    background-color: gainsboro;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.shortDescription {
+    background-color: gainsboro;
+    margin: 5px 0;
+    text-align: center;
+}
+

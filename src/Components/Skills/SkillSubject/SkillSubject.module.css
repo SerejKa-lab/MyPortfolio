@@ -1,0 +1,33 @@
+.mySkill {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border: 1px solid rgb(61, 247, 55);
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.technology {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.technology img {
+  height: 70px;
+}
+
+.technology span {
+  font-size: 25px;
+}
+
+.description {
+  text-align: center;
+  margin: 5px;
+  background-color: gainsboro;
+}

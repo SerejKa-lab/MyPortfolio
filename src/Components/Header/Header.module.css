@@ -1,0 +1,27 @@
+.header {
+  background-color: rgb(210, 255, 220);
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: rgb(94, 86, 86);
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid;
+}
+
+.navigation {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid red;
+}
