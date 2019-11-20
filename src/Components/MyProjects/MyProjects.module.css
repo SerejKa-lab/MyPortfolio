@@ -13,7 +13,7 @@
 
 .projectsContainer {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
     border: 1px solid white;
 }
@@ -25,4 +25,15 @@
     margin: 10px;
 }
 
+@media (min-width: 568px) {
+    .projectsContainer {
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1133px) {
+    .projectsContainer {
+        justify-content: space-between;
+    }
+}
 

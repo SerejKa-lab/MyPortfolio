@@ -1,5 +1,5 @@
 .slogan {
-    height: 30vh;
+    min-height: 30vh;
     background-color: rgb(255, 255, 143);
     display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@
 }
 
 .container img {
-    max-height: 60%;
+    max-height: 250px;
     max-width: 100%;
 }
 
@@ -23,8 +23,10 @@
     font-size: 25px;
     background-color: rgb(248, 250, 121);
     text-align: center;
+    margin: 10px;
 }
 
 .button button{
-    font-size: 25px;
+    font-size: 22px;
+    margin: 10px;
 }

@@ -7,13 +7,13 @@
 }
 
 .main img {
-  max-width: 60%;
+  width: 250px;
+  max-width: 70%;
   margin: 10px;
 }
 
 .container {
   width: 80%;
-  height: 70%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -23,7 +23,25 @@
 
 .greeting {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin: 10px;
+}
+
+
+.greeting span {
+  text-align: center;
+}
+
+.greeting span:nth-child(2) {
+  margin: 0 10px;
+}
+
+@media ( max-width: 932px ) {
+  .greeting {
+    flex-direction: column;
+  }
+  .greeting span {
+    margin: 0;
+  }
 }

@@ -31,3 +31,15 @@
   background-color: rgb(248, 250, 121);
   margin: 10px;
 }
+
+@media ( min-width: 530px ) {
+  .skillsBox {
+    justify-content: space-around;
+  }
+}
+
+@media ( min-width: 1133px ) {
+  .skillsBox {
+    justify-content: space-between;
+  }
+}
