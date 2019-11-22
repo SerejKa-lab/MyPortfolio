@@ -5,14 +5,14 @@ function Footer() {
   return (
     <div className={styles.footer}>
       <div className={styles.container}>
-        <div className={styles.name}>Кашко Сергей</div>
-        <div className={styles.linksBox}>
-          <div className={styles.link}>1</div>
-          <div className={styles.link}>2</div>
-          <div className={styles.link}>3</div>
-          <div className={styles.link}>4</div>
-        </div>
-        <div className={styles.copyright}>2019 Все права защищены</div>
+        <span className={styles.name}>Кашко Сергей</span>
+        <nav className={styles.linksBox}>
+          <a href = '#1' className={styles.link}>1</a>
+          <a href = '#2' className={styles.link}>2</a>
+          <a href = '#3' className={styles.link}>3</a>
+          <a href = '#4' className={styles.link}>4</a>
+        </nav>
+        <span className={styles.copyright}>Все права защищены</span>
       </div>
     </div>
   );
