@@ -5,7 +5,7 @@ import Button from '../Button/Button';
 
 function Slogan() {
    return (
-      <div className={styles.slogan}>
+      <div id='slogan' className={styles.slogan}>
          <div className={styles.container}>
             <ComponentHeader title = 'Работаю на результат!' />
             <img src="http://fumcsr.org/sites/default/files/File/campleft.jpg" alt="Result" />

@@ -5,7 +5,7 @@ import Button from "../Button/Button";
 
 function Contacts() {
    return (
-      <div className={styles.contacts}>
+      <div className={styles.contacts} id = 'contacts'>
          <div className={styles.container}>
             <ComponentHeader title='Контакты' />
             <div className={styles.contactsBox}>

@@ -5,7 +5,7 @@ import ComponentHeader from "../ComponentHeader/ComponentHeader";
 
 function MyProjects() {
    return (
-      <div className={styles.myProjects}>
+      <div id='projects' className={styles.myProjects}>
          <div className = {styles.container} >
             <ComponentHeader title = 'Работы' />
             <div className={styles.projectsContainer}>

@@ -33,7 +33,7 @@ function Skills() {
    ));
 
    return (
-      <div className={styles.skills}>
+      <div id='skills' className={styles.skills}>
          <div className={styles.container}>
             <ComponentHeader title = 'Навыки' />
             <div className={styles.skillsBox}>{subjectsComponent}</div>
