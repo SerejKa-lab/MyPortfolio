@@ -6,7 +6,7 @@ function Header() {
       <div className={styles.header}>
          <div className={styles.container}>
             <nav className={styles.navigation}>
-               <a href="№">Обо мне</a>
+               <a className={styles.active} href="№">Обо мне</a>
                <a href="#skills">Навыки</a>
                <a href="#myProjects">Проекты</a>
                <a href="#contacts">Контакты</a>
