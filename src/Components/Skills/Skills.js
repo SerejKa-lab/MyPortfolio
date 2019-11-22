@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Skills.module.css";
 import SkillSubject from "./SkillSubject/SkillSubject";
+import ComponentHeader from "../ComponentHeader/ComponentHeader";
 
 function Skills() {
    let subjects = [
@@ -16,7 +17,7 @@ function Skills() {
          src:
             "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png",
          description: "Описание опыта CSS",
-         id: 1 
+         id: 1
       },
       {
          title: "React",
@@ -28,13 +29,13 @@ function Skills() {
    ];
 
    let subjectsComponent = subjects.map(el => (
-      <SkillSubject title={el.title} src={el.src} description={el.description} key = { el.id }  />
+      <SkillSubject title={el.title} src={el.src} description={el.description} key={el.id} />
    ));
 
    return (
       <div className={styles.skills}>
          <div className={styles.container}>
-            <span className={styles.blockHeader}>Мои скилы</span>
+            <ComponentHeader title = 'Навыки' />
             <div className={styles.skillsBox}>{subjectsComponent}</div>
          </div>
       </div>
