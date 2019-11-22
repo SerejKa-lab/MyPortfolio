@@ -1,17 +1,18 @@
 .skills {
-  background-color: rgb(255, 255, 143);
-  min-height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: radial-gradient(rgb(13, 12, 26) 30%, rgb(169, 169, 169, 0.7)), url(https://d2hhj3gz5jljkm.cloudfront.net/416/144ec/1b00/4ebe/a379/522ac5d5b56a/original/98981.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   border: 1px solid;
   width: 80%;
+  margin-bottom: 30px;
 }
 
 .skillsBox {
@@ -25,20 +26,13 @@
   text-align: center;
 }
 
-.blockHeader {
-  align-self: center;
-  font-size: 25px;
-  background-color: rgb(248, 250, 121);
-  margin: 10px;
-}
-
-@media ( min-width: 530px ) {
+@media ( min-width: 530px) {
   .skillsBox {
     justify-content: space-around;
   }
 }
 
-@media ( min-width: 1133px ) {
+@media ( min-width: 1133px) {
   .skillsBox {
     justify-content: space-between;
   }

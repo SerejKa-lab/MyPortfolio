@@ -1,5 +1,5 @@
 .footer {
-  background-color: rgb(159, 207, 170);
+  background-color: rgb(55, 51, 60);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 0;
 }
 
 @media ( max-width: 774px ) {
@@ -30,17 +29,12 @@
   background-color: gainsboro;
   text-align: center;
   font-size: 25px;
+  line-height: 40px;
   margin: 10px 5px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
-@media ( max-width: 850px ) {
-  .link {
-    width: 40px;
-    height: 40px;
-  }
-}
 
 .name {
   background-color: gainsboro;

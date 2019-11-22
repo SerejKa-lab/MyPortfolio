@@ -1,14 +1,11 @@
 .header {
-  background-color: rgb(210, 255, 220);
+  position: fixed;
+  background-color: rgb(63, 58, 68);
   min-height: 50px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.navigation a {
-  text-decoration: none;
-  color: rgb(94, 86, 86);
 }
 
 .container {
@@ -23,5 +20,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  border: 1px solid red;
+}
+
+.navigation a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: white;
+  margin: 0 5px;
+}
+
+.navigation a:first-of-type {
+  margin-left: 0;
+}
+
+.navigation a:last-of-type {
+  margin-right: 0;
 }

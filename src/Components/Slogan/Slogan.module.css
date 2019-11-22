@@ -1,8 +1,9 @@
 .slogan {
-    min-height: 30vh;
-    background-color: rgb(255, 255, 143);
     display: flex;
     justify-content: center;
+    background: radial-gradient(rgb(13, 12, 26) 30%, rgb(169, 169, 169, 0.7)), url(https://d2hhj3gz5jljkm.cloudfront.net/416/144ec/1b00/4ebe/a379/522ac5d5b56a/original/98981.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .container {
@@ -11,7 +12,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid rgb(192, 66, 66);
+    border: 1px solid black;
+    margin-bottom: 30px;
 }
 
 .container img {
@@ -23,10 +25,5 @@
     font-size: 25px;
     background-color: rgb(248, 250, 121);
     text-align: center;
-    margin: 10px;
-}
-
-.button button{
-    font-size: 22px;
     margin: 10px;
 }
