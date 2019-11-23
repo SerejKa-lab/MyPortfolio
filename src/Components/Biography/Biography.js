@@ -9,7 +9,7 @@ function Biography() {
          <div className={styles.container}>
             <img
                src="https://avatars.mds.yandex.net/get-pdb/770122/4e5f72f5-a2ea-46d5-9e38-3965a3f34483/s1200"
-               alt='portfolio'
+               alt='biography'
             />
             <div className={styles.biography}>
               

@@ -4,7 +4,7 @@ import styles from "./Greeting.module.css";
 
 function Greeting(props) {
    return (
-      <div id='biography' className={styles.greetingPage}>
+      <div className={styles.greetingPage} id='startPage'>
          <div className={styles.container}>
          {props.spaDisplayMode
          ? <h1><NavLink to='/' className={styles.greeting}>Сергей Кашко. React-разработчик.</NavLink></h1>
