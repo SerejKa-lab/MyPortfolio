@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './SkillSubject.module.css'
 
-function SkillSubject(props) {
+const SkillSubject = (props) => {
   return (
     <div className={styles.mySkill}>
       <div className={styles.technology}>

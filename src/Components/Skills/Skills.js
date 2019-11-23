@@ -3,7 +3,7 @@ import styles from "./Skills.module.css";
 import SkillSubject from "./SkillSubject/SkillSubject";
 import ComponentHeader from "../ComponentHeader/ComponentHeader";
 
-function Skills() {
+const Skills = () => {
    let subjects = [
       {
          title: "HTML",

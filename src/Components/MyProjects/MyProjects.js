@@ -3,7 +3,7 @@ import styles from "./MyProjects.module.css";
 import Project from "./Project/Project";
 import ComponentHeader from "../ComponentHeader/ComponentHeader";
 
-function MyProjects() {
+const MyProjects = () => {
    return (
       <div id='projects' className={styles.myProjects}>
          <div className = {styles.container} >

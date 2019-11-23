@@ -4,7 +4,7 @@ import Button from '../../Button/Button';
 
 
 
-function Project() {
+const Project = () => {
    return (
       <div className={styles.project}>
          <div className={styles.projectReview}>

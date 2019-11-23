@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from 'react-router-dom';
 import styles from "./Greeting.module.css";
 
-function Greeting(props) {
+const Greeting = (props) => {
    return (
       <div className={styles.greetingPage} id='startPage'>
          <div className={styles.container}>

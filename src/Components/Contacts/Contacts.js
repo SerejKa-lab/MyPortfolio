@@ -3,7 +3,7 @@ import styles from "./Contacts.module.css";
 import ComponentHeader from "../ComponentHeader/ComponentHeader";
 import Button from "../Button/Button";
 
-function Contacts() {
+const Contacts = () => {
    return (
       <div className={styles.contacts} id = 'contacts'>
          <div className={styles.container}>

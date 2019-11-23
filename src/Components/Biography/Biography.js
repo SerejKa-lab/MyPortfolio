@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Biography.module.css";
 import ComponentHeader from '../ComponentHeader/ComponentHeader'
 
-function Biography() {
+const Biography = () => {
    return (
       <div className={styles.main}>
          <ComponentHeader title = 'Биография' />
