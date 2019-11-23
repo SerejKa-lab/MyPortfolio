@@ -8,7 +8,7 @@ function Slogan() {
       <div id='slogan' className={styles.slogan}>
          <div className={styles.container}>
             <ComponentHeader title = 'Работаю на результат!' />
-            <img src="http://fumcsr.org/sites/default/files/File/campleft.jpg" alt="Result" />
+            <img src="https://newbusiness.su/wp-content/uploads/2019/08/post_5d57cc231e206-695x391.jpeg" alt="Result" />
             <Button title = 'Предложить работу!' />
          </div>
       </div>

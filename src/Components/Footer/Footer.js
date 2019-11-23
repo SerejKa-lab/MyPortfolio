@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./Footer.module.css";
 
 function Footer(props) {
-   debugger;
    const footerClassName = props.spaDisplayMode ? `${styles.footer} ${styles.footerSPA}` : styles.footer;
    return (
       <div className={footerClassName}>
