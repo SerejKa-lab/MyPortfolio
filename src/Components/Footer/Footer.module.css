@@ -1,11 +1,14 @@
 .footer {
-  position: fixed;
-  width: 100%;
   bottom: 0;
   background-color: rgb(55, 51, 60);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footerSPA {
+  position: fixed;
+  width: 100%;
 }
 
 .container {

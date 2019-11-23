@@ -40,7 +40,7 @@ class App extends React.Component {
                   <Contacts />
                </div>
             }
-            <Footer />
+            <Footer spaDisplayMode = {this.state.spaDisplayMode} />
          </div>
       );
    }
