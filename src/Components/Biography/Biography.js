@@ -5,7 +5,7 @@ import ComponentHeader from '../ComponentHeader/ComponentHeader'
 function Biography() {
    return (
       <div className={styles.main}>
-         <ComponentHeader title = 'Краткая биография' />
+         <ComponentHeader title = 'Биография' />
          <div className={styles.container}>
             <img
                src="https://avatars.mds.yandex.net/get-pdb/770122/4e5f72f5-a2ea-46d5-9e38-3965a3f34483/s1200"
