@@ -19,12 +19,6 @@
   align-items: center;
 }
 
-@media ( max-width: 774px ) {
-  .container {
-    flex-direction: column;
-  }
-}
-
 .linksBox {
   display: flex;
   justify-content: space-between;
@@ -45,10 +39,28 @@
 .name {
   background-color: gainsboro;
   margin: 0 15px;
+  text-align: center;
 }
 
 .copyright {
   background-color: gainsboro;
   text-align: center;
   margin: 0 15px;
+}
+
+@media ( max-width: 618px ) {
+  .linksBox {
+    margin: 0;
+  }
+  .name,
+  .copyright {
+    font-size: 0.8em;
+  }
+}
+
+@media ( max-width: 499px ) {
+  .copyright,
+  .name {
+    display: none;
+  }
 }

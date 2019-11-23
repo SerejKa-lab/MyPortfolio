@@ -13,7 +13,7 @@ const Footer = (props) => {
                <a href='#3'>3</a>
                <a href='#4'>4</a>
             </nav>
-            <span className={styles.copyright}>Все права защищены</span>
+            <span className={styles.copyright}>2019. Все права защищены</span>
          </div>
       </div>
    );

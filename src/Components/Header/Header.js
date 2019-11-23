@@ -13,7 +13,7 @@ const Header = (props) => {
          <div className={styles.container}>
             <NavLink to = '/'>
                <img src="https://avatars.mds.yandex.net/get-dialogs/1676983/b298e77d9920f3e0409e/orig" 
-                  alt="settings" className={styles.settingsIcon} onClick={ onSetClick } />
+                  alt="settings" className={styles.ToggleModeIcon} onClick={ onSetClick } />
             </NavLink>
             {props.spaDisplayMode
                ? <nav className={styles.navigation}>
