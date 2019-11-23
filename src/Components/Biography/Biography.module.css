@@ -23,6 +23,7 @@
   border: 1px solid;
   margin-bottom: 30px;
   background: radial-gradient(rgb(13, 12, 26) 30%, rgb(169, 169, 169, 0.4));
+  border-radius: 10px;
 }
 
 .biographyBox {
