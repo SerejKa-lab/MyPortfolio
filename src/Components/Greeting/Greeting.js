@@ -7,8 +7,8 @@ function Greeting(props) {
       <div id='biography' className={styles.greetingPage}>
          <div className={styles.container}>
          {props.spaDisplayMode
-         &&<h1><NavLink to='/' className={styles.greeting}>Сергей Кашко. React-разработчик.</NavLink></h1>
-         ||<h1 className={styles.greeting}>Сергей Кашко. React-разработчик.</h1>
+         ? <h1><NavLink to='/' className={styles.greeting}>Сергей Кашко. React-разработчик.</NavLink></h1>
+         : <h1 className={styles.greeting}>Сергей Кашко. React-разработчик.</h1>
          }
          </div>
       </div>

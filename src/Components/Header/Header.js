@@ -16,14 +16,14 @@ function Header(props) {
                   alt="settings" className={styles.settings} onClick={ onSetClick } />
             </NavLink>
             {props.spaDisplayMode
-               && <nav className={styles.navigation}>
+               ? <nav className={styles.navigation}>
                   <NavLink activeClassName={styles.active} to='/' exact>Главная</NavLink>
                   <NavLink activeClassName={styles.active} to='/skills'>Навыки</NavLink>
                   <NavLink activeClassName={styles.active} to='/projects'>Проекты</NavLink>
                   <NavLink activeClassName={styles.active} to='/slogan'>Слоган</NavLink>
                   <NavLink activeClassName={styles.active} to='/contacts'>Контакты</NavLink>
                </nav>
-               || <nav className={styles.navigation}>
+               : <nav className={styles.navigation}>
                   <a href="#biography">Биография</a>
                   <a href="#skills">Навыки</a>
                   <a href="#projects">Проекты</a>
