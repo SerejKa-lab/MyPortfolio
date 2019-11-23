@@ -1,14 +1,14 @@
-.main {
+.biography {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(rgb(13, 12, 26) 30%, rgb(169, 169, 169, 0.4)), url(https://d2hhj3gz5jljkm.cloudfront.net/416/144ec/1b00/4ebe/a379/522ac5d5b56a/original/98981.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+  background: url(https://d2hhj3gz5jljkm.cloudfront.net/416/144ec/1b00/4ebe/a379/522ac5d5b56a/original/98981.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.main img {
+.biography img {
   width: 35%;
   margin: 10px;
   border-radius: 10px;
@@ -17,39 +17,22 @@
 .container {
   width: 80%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   border: 1px solid;
   margin-bottom: 30px;
+  background: radial-gradient(rgb(13, 12, 26) 30%, rgb(169, 169, 169, 0.4));
 }
 
-.biography {
+.biographyBox {
   display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  margin: 10px;
-  text-align: center;
   color: white;
 }
 
-.greeting h1 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 100;
-  letter-spacing: 2px;
-  margin: 0 10px;
-}
-
-.greeting h2 {
+.biographyBox p {
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.greeting h4 {
-  color: rgba(255, 255, 255, 0.7);
-  font-family: 'Pacifico', regular;
-  font-weight: 100;
-  letter-spacing: 5px;
-  align-self: flex-start;
+  margin: 0 15px;
 }
