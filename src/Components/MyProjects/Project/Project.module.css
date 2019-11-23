@@ -17,16 +17,6 @@
     background-image: url(https://s.tmimgcdn.com/scr/28200/28212-original.jpg);
 }
 
-.projectReview button{
-    font-size: 25px;
-    background-color: rgba(127, 250, 90, 0.507); 
-}
-
-.projectReview img {
-    max-width: 40%;
-
-}
-
 .desctiption {
     background-color: rgb(255, 255, 255);
     display: flex;

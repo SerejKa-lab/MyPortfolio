@@ -1,12 +1,14 @@
-import React from "react";
-import styles from "./Project.module.css";
+import React from 'react';
+import styles from './Project.module.css';
+import Button from '../../Button/Button';
+
 
 
 function Project() {
    return (
       <div className={styles.project}>
          <div className={styles.projectReview}>
-            <button>Смотреть</button>
+            <Button title='Смотреть' />
          </div>
          <div className={styles.desctiption}>
             <div className={styles.desctiptionBox}>
