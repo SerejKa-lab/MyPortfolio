@@ -15,9 +15,16 @@
   border: 1px solid;
 }
 
-.settings {
+.settingsIcon {
   width: 20px;
   height: 20px;
+  margin: 5px;
+}
+
+.settingsIcon:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .navigation {
@@ -30,7 +37,13 @@
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: white;
-  margin: 0 5px;
+  margin: 2px 5px;
+}
+
+.displayHTML a:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .navigation a:hover::after {
@@ -41,6 +54,7 @@
   margin: .1em auto;
   background-color: rgb(197, 17, 98);
 }
+
 .navigation a.active::after {
   content: '';
   display: block;
