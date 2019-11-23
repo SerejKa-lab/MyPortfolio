@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(rgb(13, 12, 26) 30%, rgb(169, 169, 169, 0.7)), url(https://d2hhj3gz5jljkm.cloudfront.net/416/144ec/1b00/4ebe/a379/522ac5d5b56a/original/98981.jpg);
+  background: radial-gradient(rgb(13, 12, 26) 30%, rgb(169, 169, 169, 0.4)), url(https://d2hhj3gz5jljkm.cloudfront.net/416/144ec/1b00/4ebe/a379/522ac5d5b56a/original/98981.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
