@@ -11,13 +11,34 @@ import Biography from './Components/Biography/Biography';
 import Greeting from './Components/Greeting/Greeting';
 
 class App extends React.Component {
+
+   componentDidMount(){
+      this.restoreState();
+   }
+
    state = {
       spaDisplayMode: false
    }
 
    setDisplayMode = () => {
-      this.setState({ spaDisplayMode: !this.state.spaDisplayMode })
+      this.setState({ spaDisplayMode: !this.state.spaDisplayMode }, this.saveState)
    }
+
+   saveState = () => {
+      let stateToJsonString = JSON.stringify(this.state);
+      localStorage.setItem('PortfolioSettings', stateToJsonString);
+  }
+
+  restoreState = () => {
+      let state = {};
+      let jsonStringToState = localStorage.getItem('PortfolioSettings');
+      if (jsonStringToState !== null) {
+          state = JSON.parse(jsonStringToState);
+      }
+      this.setState(state)
+  }
+
+
 
    render() {
       return (
@@ -26,12 +47,11 @@ class App extends React.Component {
             <Greeting spaDisplayMode={this.state.spaDisplayMode} />
             {this.state.spaDisplayMode
                ? <div className = {styles.displaySPA}>
-                  <Route className='biogaphyRoute' path='/' exact component={Biography} />
-                  <Route className='biogaphyRoute' path='/MyPortfolio' component={Biography} />
-                  <Route path='/skills' component={Skills} />
-                  <Route path='/projects' component={MyProjects} />
-                  <Route path='/slogan' component={Slogan} />
-                  <Route path='/contacts' component={Contacts} />
+                  <Route className='biogaphyRoute' path='/MyPortfolio' exact component={Biography} />
+                  <Route path='/MyPortfolio/skills' component={Skills} />
+                  <Route path='/MyPortfolio/projects' component={MyProjects} />
+                  <Route path='/MyPortfolio/slogan' component={Slogan} />
+                  <Route path='/MyPortfolio/contacts' component={Contacts} />
                </div>
                : <div>
                   <Biography />
