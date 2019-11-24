@@ -8,10 +8,9 @@ const Footer = (props) => {
          <div className={styles.container}>
             <span className={styles.name}>Кашко Сергей</span>
             <nav className={styles.linksBox}>
-               <a href='#1'>1</a>
-               <a href='#2'>2</a>
-               <a href='#3'>3</a>
-               <a href='#4'>4</a>
+               <a className = {styles.socialVK} href='https://vk.com/id28901' target='_blank' rel='noopener noreferrer'> </a>
+               <a className = {styles.socialTelegram} href='tg://resolve?domain=Sergey_Kashko'> </a>
+               <a className = {styles.socialPhone} href='tel:+375295625799'> </a>
             </nav>
             <span className={styles.copyright}>2019. Все права защищены</span>
          </div>

@@ -4,6 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
 }
 
 .footerSPA {
@@ -13,7 +15,6 @@
 
 .container {
   width: 80%;
-  border: 1px solid;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +27,6 @@
 }
 
 .linksBox a {
-  background-color: gainsboro;
   text-align: center;
   font-size: 25px;
   line-height: 40px;
@@ -35,32 +35,55 @@
   height: 40px;
 }
 
+.linksBox a:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.socialVK {
+  background-image: url('../../Images/social-icons.png');
+  background-size: 500px;
+  background-position: 295px -5px;
+}
+
+.socialTelegram {
+  background-image: url('../../Images/social-icons.png');
+  background-size: 500px;
+  background-position: 345px -105px;
+}
+
+.socialPhone {
+  background-image: url('../../Images/social-icons.png');
+  background-size: 500px;
+  background-position: 445px -105px;
+}
 
 .name {
-  background-color: gainsboro;
   margin: 0 15px;
   text-align: center;
+  width: 200px;
 }
 
 .copyright {
-  background-color: gainsboro;
   text-align: center;
   margin: 0 15px;
+  max-width: 200px;
 }
 
-@media ( max-width: 618px ) {
+@media ( max-width: 718px) {
   .linksBox {
     margin: 0;
   }
-  .name,
-  .copyright {
+  .name, .copyright {
     font-size: 0.8em;
   }
 }
 
-@media ( max-width: 499px ) {
-  .copyright,
-  .name {
+@media ( max-width: 400px) {
+  .copyright, .name {
     display: none;
   }
 }
