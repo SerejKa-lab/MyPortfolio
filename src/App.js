@@ -27,6 +27,7 @@ class App extends React.Component {
             {this.state.spaDisplayMode
                ? <div className = {styles.displaySPA}>
                   <Route className='biogaphyRoute' path='/' exact component={Biography} />
+                  <Route className='biogaphyRoute' path='/MyPortfolio' component={Biography} />
                   <Route path='/skills' component={Skills} />
                   <Route path='/projects' component={MyProjects} />
                   <Route path='/slogan' component={Slogan} />
