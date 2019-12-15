@@ -4,16 +4,15 @@ import styles from "./Header.module.css";
 
 const Header = (props) => {
 
-   const onSetClick = () => {
-      props.setDisplayMode()
-   }
+   const setOnClick = () => props.setDisplayMode();
+  
 
    return (
       <div className={styles.header}>
          <div className={styles.container}>
-            <NavLink to = '/MyPortfolio'>
+            <NavLink to = '/MyPortfolio' exact>
                <img src="https://avatars.mds.yandex.net/get-dialogs/1676983/b298e77d9920f3e0409e/orig" 
-                  alt="settings" className={styles.ToggleModeIcon} onClick={ onSetClick } />
+                  alt="settings" className={styles.ToggleModeIcon} onClick={ setOnClick } />
             </NavLink>
             {props.spaDisplayMode
                ? <nav className={styles.navigation}>
