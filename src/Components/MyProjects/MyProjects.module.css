@@ -1,9 +1,6 @@
 .myProjects {
     display: flex;
     justify-content: center;
-    background: url(../../Images/NeuroNet.jpg);
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .container {
