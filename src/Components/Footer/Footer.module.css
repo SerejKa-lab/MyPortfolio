@@ -27,38 +27,9 @@
 }
 
 .linksBox a {
-  text-align: center;
-  font-size: 25px;
-  line-height: 40px;
-  margin: 5px;
-  width: 40px;
-  height: 40px;
-}
-
-.linksBox a:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  background-color: white;
-  border-radius: 50%;
-}
-
-.socialVK {
-  background-image: url('../../Images/social-icons.png');
-  background-size: 500px;
-  background-position: 295px -5px;
-}
-
-.socialTelegram {
-  background-image: url('../../Images/social-icons.png');
-  background-size: 500px;
-  background-position: 345px -105px;
-}
-
-.socialPhone {
-  background-image: url('../../Images/social-icons.png');
-  background-size: 500px;
-  background-position: 445px -105px;
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
 }
 
 .name {

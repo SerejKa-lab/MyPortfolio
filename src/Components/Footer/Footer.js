@@ -1,5 +1,9 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import VkIcon from "../SocialIcons/VkIcon";
+import TelegramIcon from "../SocialIcons/TelegramIcon";
+import ViberIcon from "../SocialIcons/ViberIcon";
+import PhoneIcon from "../SocialIcons/PhoneIcon";
 
 const Footer = (props) => {
    const footerClassName = props.spaDisplayMode ? `${styles.footer} ${styles.footerSPA}` : styles.footer;
@@ -8,9 +12,10 @@ const Footer = (props) => {
          <div className={styles.container}>
             <span className={styles.name}>Кашко Сергей</span>
             <nav className={styles.linksBox}>
-               <a className = {styles.socialVK} href='https://vk.com/id28901' target='_blank' rel='noopener noreferrer'> </a>
-               <a className = {styles.socialTelegram} href='tg://resolve?domain=Sergey_Kashko'> </a>
-               <a className = {styles.socialPhone} href='tel:+375295625799'> </a>
+               <a href='https://vk.com/id28901' target='_blank' rel='noopener noreferrer'><VkIcon /></a>
+               <a href='viber://chat?add=375295625799'><ViberIcon /></a>
+               <a href='tg://resolve?domain=Sergey_Kashko'><TelegramIcon /></a>
+               <a href='tel:+375295625799'><PhoneIcon /></a>
             </nav>
             <span className={styles.copyright}>2019. Все права защищены</span>
          </div>
