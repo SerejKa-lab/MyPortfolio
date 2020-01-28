@@ -1,8 +1,9 @@
 import React from 'react'
 import styles from './SettingsMenu.module.css'
+import { Link } from 'react-router-dom'
 
 
-const SettingsMenu = ({display, setSpaDisplayMode, setMenuDisp, setColorTheme}) => {
+const SettingsMenu = ({display, setSpaDisplayMode, setColorTheme}) => {
 
     const menuStyle = display ? styles.settingsMenu : styles.hideMenu
 
@@ -18,10 +19,10 @@ const SettingsMenu = ({display, setSpaDisplayMode, setMenuDisp, setColorTheme}) 
     })
 
     return(
-        <div className={menuStyle} onBlur={() => setMenuDisp(false)} tabIndex='0'>
+        <div className={menuStyle}>
             <div className={styles.dispayMode}>
-                <div className={styles.htmlButton} onClick={setHtmlMode}>HTML</div>
-                <div className={styles.spaButton} onClick={setSpaMode}>SPA</div>
+                <Link to='/biography'><div className={styles.htmlButton} onClick={setHtmlMode}>HTML</div></Link>
+                <Link to='/portfolio/biography'><div className={styles.spaButton} onClick={setSpaMode}>SPA</div></Link>
             </div>
             <div className={styles.colorTheme}>
                 {colorButtons}

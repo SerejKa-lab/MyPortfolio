@@ -15,17 +15,17 @@ const Header = ({spaDisplayMode, setSpaDisplayMode, setColorTheme, colorTheme}) 
                <SettingsIcon active={showMenu} colorTheme={colorTheme}/>
             </div>
             <SettingsMenu display={showMenu} setSpaDisplayMode={setSpaDisplayMode} 
-               setColorTheme={setColorTheme} setMenuDisp={setMenuDisp}/>
+               setColorTheme={setColorTheme}/>
             {spaDisplayMode
                ? <nav className={styles.navigation+' '+styles[`theme_${colorTheme}`]}>
-                  <NavLink activeClassName={styles.active} to='/biography' exact>Главная</NavLink>
-                  <NavLink activeClassName={styles.active} to='/skills'>Навыки</NavLink>
-                  <NavLink activeClassName={styles.active} to='/projects'>Проекты</NavLink>
-                  <NavLink activeClassName={styles.active} to='/slogan'>Слоган</NavLink>
-                  <NavLink activeClassName={styles.active} to='/contacts'>Контакты</NavLink>
+                  <NavLink activeClassName={styles.active} to='/portfolio/biography' exact>Главная</NavLink>
+                  <NavLink activeClassName={styles.active} to='/portfolio/skills'>Навыки</NavLink>
+                  <NavLink activeClassName={styles.active} to='/portfolio/projects'>Проекты</NavLink>
+                  <NavLink activeClassName={styles.active} to='/portfolio/slogan'>Слоган</NavLink>
+                  <NavLink activeClassName={styles.active} to='/portfolio/contacts'>Контакты</NavLink>
                </nav>
                : <nav className={`${styles.navigation} ${styles.displayHTML} ${styles[`theme_${colorTheme}`]}`}>
-                  <a href="#startPage">Биография</a>
+                  <a href="#biography">Биография</a>
                   <a href="#skills">Навыки</a>
                   <a href="#projects">Проекты</a>
                   <a href="#slogan">Слоган</a>

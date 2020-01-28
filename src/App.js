@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import { ColorThemeProvider } from './ReactContects/ColorThemeContext'
 import styles from './App.module.css';
 import Header from './Components/Header/Header';
@@ -10,6 +10,7 @@ import Footer from './Components/Footer/Footer';
 import MyProjects from './Components/MyProjects/MyProjects';
 import Biography from './Components/Biography/Biography';
 import Greeting from './Components/Greeting/Greeting';
+import Error404 from './Components/Error404/Error404'
 
 class App extends React.Component {
 
@@ -19,7 +20,7 @@ class App extends React.Component {
 
    state = {
       spaDisplayMode: false,
-      colorTheme: 'maroon'
+      colorTheme: 'blue'
    }
 
    setColorTheme = (color) => {
@@ -57,18 +58,24 @@ class App extends React.Component {
                <Greeting spaDisplayMode={this.state.spaDisplayMode} />
                {this.state.spaDisplayMode
                   ? <div className={styles.displaySPA}>
-                     <Route className='biogaphyRoute' path='/biography' exact component={Biography} />
-                     <Route path='/skills' component={Skills} />
-                     <Route path='/projects' component={MyProjects} />
-                     <Route path='/slogan' component={Slogan} />
-                     <Route path='/contacts' component={Contacts} />
+                     <Switch>
+                        <Redirect exact from='/' to='/portfolio/biography' />
+                        <Redirect exact from='/portfolio' to='/portfolio/biography' />
+                        <Route path='/portfolio/biography' exact component={Biography} />
+                        <Route path='/portfolio/skills' component={Skills} />
+                        <Route path='/portfolio/projects' component={MyProjects} />
+                        <Route path='/portfolio/slogan' component={Slogan} />
+                        <Route path='/portfolio/contacts' component={Contacts} />
+                        <Route component={Error404} />
+                     </Switch>
                   </div>
+                  
                   : <div>
-                     <Biography />
-                     <Skills />
-                     <MyProjects />
-                     <Slogan />
-                     <Contacts />
+                        <Biography />
+                        <Skills />
+                        <MyProjects />
+                        <Slogan />
+                        <Contacts />
                   </div>
                }
                <Footer spaDisplayMode={this.state.spaDisplayMode} colorTheme={this.state.colorTheme}/>
