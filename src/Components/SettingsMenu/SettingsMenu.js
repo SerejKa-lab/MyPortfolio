@@ -22,7 +22,7 @@ const SettingsMenu = ({display, setSpaDisplayMode, setColorTheme}) => {
         <div className={menuStyle}>
             <div className={styles.dispayMode}>
                 <Link to='/biography'><div className={styles.htmlButton} onClick={setHtmlMode}>HTML</div></Link>
-                <Link to='/portfolio/biography'><div className={styles.spaButton} onClick={setSpaMode}>SPA</div></Link>
+                <Link to='/biography'><div className={styles.spaButton} onClick={setSpaMode}>SPA</div></Link>
             </div>
             <div className={styles.colorTheme}>
                 {colorButtons}

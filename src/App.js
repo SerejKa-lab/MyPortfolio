@@ -59,13 +59,13 @@ class App extends React.Component {
                {this.state.spaDisplayMode
                   ? <div className={styles.displaySPA}>
                      <Switch>
-                        <Redirect exact from='/' to='/portfolio/biography' />
-                        <Redirect exact from='/portfolio' to='/portfolio/biography' />
-                        <Route path='/portfolio/biography' exact component={Biography} />
-                        <Route path='/portfolio/skills' component={Skills} />
-                        <Route path='/portfolio/projects' component={MyProjects} />
-                        <Route path='/portfolio/slogan' component={Slogan} />
-                        <Route path='/portfolio/contacts' component={Contacts} />
+                        <Redirect exact from='/' to='/biography' />
+                        <Redirect exact from='/portfolio' to='/biography' />
+                        <Route path='/biography' exact component={Biography} />
+                        <Route path='/skills' component={Skills} />
+                        <Route path='/projects' component={MyProjects} />
+                        <Route path='/slogan' component={Slogan} />
+                        <Route path='/contacts' component={Contacts} />
                         <Route component={Error404} />
                      </Switch>
                   </div>

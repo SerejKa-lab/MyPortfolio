@@ -18,11 +18,11 @@ const Header = ({spaDisplayMode, setSpaDisplayMode, setColorTheme, colorTheme}) 
                setColorTheme={setColorTheme}/>
             {spaDisplayMode
                ? <nav className={styles.navigation+' '+styles[`theme_${colorTheme}`]}>
-                  <NavLink activeClassName={styles.active} to='/portfolio/biography' exact>Главная</NavLink>
-                  <NavLink activeClassName={styles.active} to='/portfolio/skills'>Навыки</NavLink>
-                  <NavLink activeClassName={styles.active} to='/portfolio/projects'>Проекты</NavLink>
-                  <NavLink activeClassName={styles.active} to='/portfolio/slogan'>Слоган</NavLink>
-                  <NavLink activeClassName={styles.active} to='/portfolio/contacts'>Контакты</NavLink>
+                  <NavLink activeClassName={styles.active} to='/biography' exact>Биография</NavLink>
+                  <NavLink activeClassName={styles.active} to='/skills'>Навыки</NavLink>
+                  <NavLink activeClassName={styles.active} to='/projects'>Проекты</NavLink>
+                  <NavLink activeClassName={styles.active} to='/slogan'>Слоган</NavLink>
+                  <NavLink activeClassName={styles.active} to='/contacts'>Контакты</NavLink>
                </nav>
                : <nav className={`${styles.navigation} ${styles.displayHTML} ${styles[`theme_${colorTheme}`]}`}>
                   <a href="#biography">Биография</a>
