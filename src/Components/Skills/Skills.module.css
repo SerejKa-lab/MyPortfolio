@@ -17,7 +17,6 @@
 .skillsBox {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid rgb(252, 32, 179)
 }
 
 .skills .container span {

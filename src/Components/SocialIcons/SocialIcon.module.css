@@ -2,26 +2,22 @@
     fill: white;
 }
 
-.iconActive path {
-    fill: white;
-}
-
-.theme_blue path {
+.theme_blue path{
     fill: rgb(27, 212, 252);
 }
 
-.theme_darkRed path {
+.theme_darkRed path{
     fill: rgb(200, 0, 139);
 }
 
-.theme_green path {
+.theme_green path{
     fill: rgb(48, 254, 118);
 }
 
-.theme_maroon path {
+.theme_maroon path{
     fill: rgb(255, 0, 237);
 }
 
-.theme_violet path {
+.theme_violet path{
     fill: rgb(166, 104, 255);
 }

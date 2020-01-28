@@ -16,5 +16,25 @@
     width: 80px;
     height: 4px;
     margin: .5em auto;
+}
+
+.theme_blue::after{
+    background-color: rgb(27, 212, 252);
+}
+
+.theme_darkRed::after {
     background-color: rgb(200, 0, 139);
 }
+
+.theme_green::after {
+    background-color: rgb(48, 254, 118);
+}
+
+.theme_maroon::after {
+    background-color: rgb(255, 0, 237);
+}
+
+.theme_violet::after {
+    background-color: rgb(166, 104, 255);
+}
+

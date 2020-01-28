@@ -7,7 +7,7 @@ const Greeting = (props) => {
       <div className={styles.greetingPage} id='startPage'>
          <div className={styles.container}>
          {props.spaDisplayMode
-         ? <h1><NavLink to='/' className={styles.greeting}>Сергей Кашко. React-разработчик.</NavLink></h1>
+         ? <h1><NavLink to='/biography' className={styles.greeting}>Сергей Кашко. React-разработчик.</NavLink></h1>
          : <h1 className={styles.greeting}>Сергей Кашко. React-разработчик.</h1>
          }
          </div>

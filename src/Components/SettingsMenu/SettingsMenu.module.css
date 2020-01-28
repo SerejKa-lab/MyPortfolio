@@ -1,10 +1,15 @@
 .settingsMenu {
     position: absolute;
-    top: 42px;
+    top: 41px;
     left: 0;
     background-color: #3f3a44;
     border: 1px solid white;
     border-radius: 3px;
+}
+
+.settingsMenu:hover,
+.settingsMenu:focus {
+    outline: none;
 }
 
 .hideMenu {
@@ -18,26 +23,25 @@
     padding: 10px;
 }
 
+.dispayMode > * {
+    background-color: #f0f0f0;
+    width: 45px;
+    padding: 0 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dispayMode *:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
 .colorTheme {
     display: flex;
     justify-content: space-around;
     padding: 10px;
-}
-
-.htmlButton {
-    background-color: #f0f0f0;
-    padding: 0 5px;
-    margin-right: 5px;
-    border-radius: 2px;
-    cursor: pointer;
-}
-
-.spaButton {
-    background-color: #f0f0f0;
-    padding: 0 5px;
-    margin-left: 5px;
-    border-radius: 2px;
-    cursor: pointer;
 }
 
 .colorButton {
@@ -47,12 +51,6 @@
     margin-right: 10px;
     cursor: pointer;
     padding: 1px;
-}
-
-.dispayMode *:hover {
-    -webkit-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    transform: scale(1.02);
 }
 
 .colorTheme *:hover {
@@ -71,8 +69,8 @@
     background-color: rgb(200, 0, 139);
 }
 
-.lightGreen {
-    background-color: rgb(169, 254, 68);
+.green {
+    background-color: rgb(48, 254, 118);
 }
 
 .maroon {

@@ -1,10 +1,31 @@
 .app {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     min-height: 100vh;
-    background-image: url(./Assets/Images/NeuroNet.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
 .displaySPA {
     margin-bottom: 40px;
+}
+
+.theme_blue {
+    background-image: url(./Assets/Images/neuro-blue.jpg);
+}
+
+.theme_darkRed {
+    background-image: url(./Assets/Images/neuro-darkRed.jpg);
+}
+
+.theme_green {
+    background-image: url(./Assets/Images/neuro-green.png);
+}
+
+.theme_maroon {
+    background-image: url(./Assets/Images/neuro-maroon.png);
+}
+
+.theme_violet {
+    background-image: url(./Assets/Images/neuro-violet.png);
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
+import { ColorThemeProvider } from './ReactContects/ColorThemeContext'
 import styles from './App.module.css';
 import Header from './Components/Header/Header';
 import Skills from './Components/Skills/Skills';
@@ -12,57 +13,67 @@ import Greeting from './Components/Greeting/Greeting';
 
 class App extends React.Component {
 
-   componentDidMount(){
+   componentDidMount() {
       this.restoreState();
    }
 
    state = {
-      spaDisplayMode: false
+      spaDisplayMode: false,
+      colorTheme: 'maroon'
    }
 
-   setDisplayMode = () => {
-      this.setState({ spaDisplayMode: !this.state.spaDisplayMode }, this.saveState)
+   setColorTheme = (color) => {
+      if (this.state.colorTheme !== color)
+         this.setState({ colorTheme: color }, this.saveState)
    }
+
+   setSpaDisplayMode = (display) => this.setState({ spaDisplayMode: display }, this.saveState)
 
    saveState = () => {
       let stateToJsonString = JSON.stringify(this.state);
       localStorage.setItem('PortfolioSettings', stateToJsonString);
-  }
+   }
 
-  restoreState = () => {
+   restoreState = () => {
       let state = {};
       let jsonStringToState = localStorage.getItem('PortfolioSettings');
       if (jsonStringToState !== null) {
-          state = JSON.parse(jsonStringToState);
+         state = JSON.parse(jsonStringToState);
       }
       this.setState(state)
-  }
-
+   }
 
 
    render() {
+
       return (
-         <div className={styles.app}>
-            <Header setDisplayMode={this.setDisplayMode} spaDisplayMode={this.state.spaDisplayMode} />
-            <Greeting spaDisplayMode={this.state.spaDisplayMode} />
-            {this.state.spaDisplayMode
-               ? <div className = {styles.displaySPA}>
-                  <Route className='biogaphyRoute' path='/MyPortfolio' exact component={Biography} />
-                  <Route path='/MyPortfolio/skills' component={Skills} />
-                  <Route path='/MyPortfolio/projects' component={MyProjects} />
-                  <Route path='/MyPortfolio/slogan' component={Slogan} />
-                  <Route path='/MyPortfolio/contacts' component={Contacts} />
-               </div>
-               : <div>
-                  <Biography />
-                  <Skills />
-                  <MyProjects />
-                  <Slogan />
-                  <Contacts />
-               </div>
-            }
-            <Footer spaDisplayMode = {this.state.spaDisplayMode} />
-         </div>
+         <ColorThemeProvider value={this.state.colorTheme}>
+            <div className={styles.app + ' ' + styles[`theme_${this.state.colorTheme}`]}>
+               <Header
+                  setSpaDisplayMode={this.setSpaDisplayMode}
+                  spaDisplayMode={this.state.spaDisplayMode}
+                  setColorTheme={this.setColorTheme} 
+                  colorTheme={this.state.colorTheme} />
+               <Greeting spaDisplayMode={this.state.spaDisplayMode} />
+               {this.state.spaDisplayMode
+                  ? <div className={styles.displaySPA}>
+                     <Route className='biogaphyRoute' path='/biography' exact component={Biography} />
+                     <Route path='/skills' component={Skills} />
+                     <Route path='/projects' component={MyProjects} />
+                     <Route path='/slogan' component={Slogan} />
+                     <Route path='/contacts' component={Contacts} />
+                  </div>
+                  : <div>
+                     <Biography />
+                     <Skills />
+                     <MyProjects />
+                     <Slogan />
+                     <Contacts />
+                  </div>
+               }
+               <Footer spaDisplayMode={this.state.spaDisplayMode} colorTheme={this.state.colorTheme}/>
+            </div>
+         </ColorThemeProvider>
       );
    }
 }
