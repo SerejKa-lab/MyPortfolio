@@ -2,13 +2,21 @@ import React from 'react';
 import styles from './SettingsIcon.module.css'
 
 
-const SettingsIcon = ({ ...styleArgs }) => {
+const SettingsIcon = ({ active, ...styleArgs }) => {
+    
     const style = { width: '22px', height: '22px', ...styleArgs }
+
+    const classNames = require('classnames');
+
+    let iconStyle = classNames({
+        [styles.iconActive]: active,
+        [styles.theme_violet]: !active
+    })
 
     return(
         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
             viewBox="0 0 512 512" style={style} className={styles.icon} >
-	        <g className={styles.theme_violet}>
+	        <g className={iconStyle}>
                 <path d="M500.6,212.6l-59.9-14.7c-3.3-10.5-7.5-20.7-12.6-30.6l30.6-51c3.6-6,2.7-13.5-2.1-18.3L414,55.4
                     c-4.8-4.8-12.3-5.7-18.3-2.1l-51,30.6c-9.9-5.1-20.1-9.3-30.6-12.6l-14.4-59.9C297.9,4.8,291.9,0,285,0h-60
                     c-6.9,0-12.9,4.8-14.7,11.4l-14.4,59.9c-10.5,3.3-20.7,7.5-30.6,12.6l-51-30.6c-6-3.6-13.5-2.7-18.3,2.1L53.4,98

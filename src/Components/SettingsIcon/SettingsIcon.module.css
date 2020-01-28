@@ -2,6 +2,10 @@
     fill: white;
 }
 
+.iconActive path {
+    fill: white;
+}
+
 .theme_blue path {
     fill: rgb(27, 212, 252);
 }
