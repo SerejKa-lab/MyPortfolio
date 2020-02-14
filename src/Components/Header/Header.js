@@ -1,21 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from 'react-router-dom';
 import styles from "./Header.module.css";
-import SettingsIcon from '../SettingsIcon/SettingsIcon'
-import SettingsMenu from "../SettingsMenu/SettingsMenu";
+import Settings from "../Settings/Settings";
 
-const Header = ({spaDisplayMode, setSpaDisplayMode, setColorTheme, colorTheme}) => {
+const Header = (props) => {
 
-   const [showMenu, setMenuDisp] = useState(false)
+   const { spaDisplayMode, colorTheme } = props
 
    return (
       <div className={styles.header}>
          <div className={styles.container}>
-            <div className={styles.iconWrapper} onClick={() => setMenuDisp(!showMenu)}>
-               <SettingsIcon active={showMenu} colorTheme={colorTheme}/>
-            </div>
-            <SettingsMenu display={showMenu} setSpaDisplayMode={setSpaDisplayMode} 
-               setColorTheme={setColorTheme}/>
+            <Settings { ...props } />
             {spaDisplayMode
                ? <nav className={styles.navigation+' '+styles[`theme_${colorTheme}`]}>
                   <NavLink activeClassName={styles.active} to='/biography' exact>Биография</NavLink>

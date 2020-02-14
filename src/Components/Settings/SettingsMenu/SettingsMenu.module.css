@@ -4,47 +4,103 @@
     left: 0;
     background-color: #3f3a44;
     border: 1px solid white;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
-.settingsMenu:hover,
+@media( max-width: 545px) {
+    .settingsMenu {
+        top: 49px;
+    }
+}
+
+.settingsMenu:hover, 
 .settingsMenu:focus {
     outline: none;
 }
 
-.hideMenu {
-    display: none;
-}
-
-.dispayMode {
+.buttonsBlock {
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid white;
-    padding: 10px;
+    color: white;
 }
 
-.dispayMode > * {
-    background-color: #f0f0f0;
-    width: 45px;
-    padding: 0 5px;
-    border-radius: 8px;
+.buttonsBlock button {
+    border-radius: 15px;
+}
+
+.langSelect {
+    display: flex;
+    border-right: 1px solid;
+    margin-left: 5px;
+    margin: 5px;
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.langSelect span {
     cursor: pointer;
-    text-align: center;
+}
+
+.displayStyle {
+    display: flex;
+    padding: 5px 5px;
+    margin: auto 0;
+    margin-right: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.displayStyle a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
-.dispayMode *:hover {
-    -webkit-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    transform: scale(1.02);
+.buttonsBlock span:first-child {
+    padding-right: 5px;
+    border-right: 2px solid;
 }
 
-.dispayMode div:hover {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+.buttonsBlock span:last-child {
+    padding-left: 5px;
 }
+
+.buttonsBlock span::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: .1em auto;
+}
+
+.theme_blue span:hover::after,
+.theme_blue span.active::after {
+  background-color: rgb(27, 212, 252);
+}
+
+.theme_darkRed span:hover::after,
+.theme_darkRed span.active::after {
+  background-color: rgb(247, 2, 168);
+}
+
+.theme_green span:hover::after,
+.theme_green span.active::after {
+  background-color: rgb(48, 254, 118);
+}
+
+.theme_maroon span:hover::after,
+.theme_maroon span.active::after {
+  background-color: rgb(255, 0, 237);
+}
+
+.theme_violet span:hover::after,
+.theme_violet span.active::after {
+  background-color: rgb(186, 138, 255);
+}
+
+
+/* ---------- choose colorTheme panel--------------- */
 
 .colorTheme {
     display: flex;

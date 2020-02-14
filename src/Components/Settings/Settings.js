@@ -3,6 +3,8 @@ import styles from './Settings.module.css'
 import SettingsIcon from './SettingsIcon/SettingsIcon'
 import SettingsMenu from './SettingsMenu/SettingsMenu'
 import onClickOutside from 'react-onclickoutside'
+// onClickOutside supports class components
+
 
 
 class Settings extends React.Component {
@@ -17,15 +19,14 @@ class Settings extends React.Component {
     render() {
 
         const { showMenu } = this.state
-        const {colorTheme, setSpaDisplayMode, setColorTheme} = this.props
+        const { colorTheme } = this.props
 
         return (
             <div className={styles.settings}>
                 <div className={styles.iconWrapper} onClick={() => this.setMenuDisp(!showMenu)}>
-                    <SettingsIcon active={showMenu} colorTheme={colorTheme} />
+                    <SettingsIcon showMenu={showMenu} colorTheme={colorTheme} />
                 </div>
-                <SettingsMenu display={showMenu} setSpaDisplayMode={setSpaDisplayMode}
-                    setColorTheme={setColorTheme} />
+                { showMenu && <SettingsMenu {...this.props} /> }
             </div>
         )
     }

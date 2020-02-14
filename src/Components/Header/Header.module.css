@@ -16,11 +16,6 @@
   position: relative;
 }
 
-.iconWrapper {
-  margin-top: 5px;
-  cursor: pointer;
-}
-
 .navigation {
   display: flex;
   flex-wrap: wrap;
@@ -35,7 +30,7 @@
   margin-top: 5px;
 }
 
-@media ( max-width: 549px ) {
+@media ( max-width: 545px ) {
   .navigation a {
     margin: 2px 5px;
   }

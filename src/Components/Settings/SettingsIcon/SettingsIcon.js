@@ -2,15 +2,15 @@ import React from 'react';
 import styles from './SettingsIcon.module.css'
 
 
-const SettingsIcon = ({ active, colorTheme, ...styleArgs }) => {
+const SettingsIcon = ({ showMenu, colorTheme, ...styleArgs }) => {
     
     const style = { width: '22px', height: '22px', ...styleArgs }
 
     const classNames = require('classnames');
 
     const iconStyle = classNames({
-        [styles.iconActive]: active,
-        [styles[`theme_${colorTheme}`]]: !active
+        [styles.iconActive]: showMenu,
+        [styles[`theme_${colorTheme}`]]: !showMenu
     })
 
     return(
