@@ -3,7 +3,7 @@ import styles from './SettingsMenu.module.css'
 import { Link } from 'react-router-dom'
 
 
-const SettingsMenu = ({display, setSpaDisplayMode, setColorTheme}) => {
+const SettingsMenu = ({ display, setSpaDisplayMode, setColorTheme }) => {
 
     const menuStyle = display ? styles.settingsMenu : styles.hideMenu
 
@@ -12,13 +12,13 @@ const SettingsMenu = ({display, setSpaDisplayMode, setColorTheme}) => {
 
     const colors = ['blue', 'darkRed', 'green', 'maroon', 'violet']
     const colorButtons = colors.map((color) => {
-        return(
-            <div className={styles.colorButton+' '+styles[color]} 
-                onClick={() => setColorTheme(color)} key={color}/>
+        return (
+            <div className={styles.colorButton + ' ' + styles[color]}
+                onClick={() => setColorTheme(color)} key={color} />
         )
     })
 
-    return(
+    return (
         <div className={menuStyle}>
             <div className={styles.dispayMode}>
                 <Link to='/biography'><div className={styles.htmlButton} onClick={setHtmlMode}>HTML</div></Link>
@@ -30,5 +30,6 @@ const SettingsMenu = ({display, setSpaDisplayMode, setColorTheme}) => {
         </div>
     )
 }
+
 
 export default SettingsMenu
