@@ -8,7 +8,7 @@ const SkillSubject = (props) => {
         <img src={props.src}
           alt="icon-logo"
         />
-        <span className={styles.description}>{props.title}</span>
+        <span className={styles.title}>{props.title}</span>
       </div>
       <span className={styles.description}>{props.description}</span>
     </div>

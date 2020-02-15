@@ -1,22 +1,23 @@
-import React from "react";
-import styles from "./Biography.module.css";
+import React from 'react'
+import { injectIntl, FormattedMessage } from 'react-intl'
+import styles from './Biography.module.css'
 import ComponentHeader from '../ComponentHeader/ComponentHeader'
 
-const Biography = () => {
+const Biography = ({ intl }) => {
    return (
       <div className={styles.biography}>
          <div className={styles.container}>
-            <ComponentHeader title='Биография' />
+            <ComponentHeader title={intl.formatMessage({ id: 'biography.header' })} />
             <div className={styles.biographyBox}>
                <img
                   src="https://avatars.mds.yandex.net/get-pdb/770122/4e5f72f5-a2ea-46d5-9e38-3965a3f34483/s1200"
                   alt='biography'
                />
-               <p>Никогда не откладывай на завтра то, что можешь сделать послезавтра. Марк Твен</p>
+               <p><FormattedMessage id='biography.description' /></p>
             </div>
          </div>
       </div>
-   );
+   )
 }
 
-export default Biography;
+export default injectIntl(Biography)

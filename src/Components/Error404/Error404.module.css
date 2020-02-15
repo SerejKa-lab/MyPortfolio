@@ -1,3 +1,9 @@
+.error404 {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
 .error404 code {
     color: mediumvioletred;
 }

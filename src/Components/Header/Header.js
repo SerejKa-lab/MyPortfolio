@@ -1,7 +1,8 @@
-import React from "react";
-import { NavLink } from 'react-router-dom';
-import styles from "./Header.module.css";
-import Settings from "../Settings/Settings";
+import React from "react"
+import { NavLink } from 'react-router-dom'
+import { FormattedMessage } from 'react-intl'
+import styles from "./Header.module.css"
+import Settings from "../Settings/Settings"
 
 const Header = (props) => {
 
@@ -10,26 +11,31 @@ const Header = (props) => {
    return (
       <div className={styles.header}>
          <div className={styles.container}>
-            <Settings { ...props } />
+            <Settings {...props} />
             {spaDisplayMode
-               ? <nav className={styles.navigation+' '+styles[`theme_${colorTheme}`]}>
-                  <NavLink activeClassName={styles.active} to='/biography' exact>Биография</NavLink>
-                  <NavLink activeClassName={styles.active} to='/skills'>Навыки</NavLink>
-                  <NavLink activeClassName={styles.active} to='/projects'>Проекты</NavLink>
-                  <NavLink activeClassName={styles.active} to='/slogan'>Слоган</NavLink>
-                  <NavLink activeClassName={styles.active} to='/contacts'>Контакты</NavLink>
+               ? <nav className={styles.navigation + ' ' + styles[`theme_${colorTheme}`]}>
+                  <NavLink activeClassName={styles.active} to='/biography' exact>
+                     <FormattedMessage id='header.nav.biography' /></NavLink>
+                  <NavLink activeClassName={styles.active} to='/skills'>
+                     <FormattedMessage id='header.nav.skills' /></NavLink>
+                  <NavLink activeClassName={styles.active} to='/projects'>
+                     <FormattedMessage id='header.nav.projects' /></NavLink>
+                  <NavLink activeClassName={styles.active} to='/slogan'>
+                     <FormattedMessage id='header.nav.slogan' /></NavLink>
+                  <NavLink activeClassName={styles.active} to='/contacts'>
+                     <FormattedMessage id='header.nav.contacts' /></NavLink>
                </nav>
                : <nav className={`${styles.navigation} ${styles.displayHTML} ${styles[`theme_${colorTheme}`]}`}>
-                  <a href="#biography">Биография</a>
-                  <a href="#skills">Навыки</a>
-                  <a href="#projects">Проекты</a>
-                  <a href="#slogan">Слоган</a>
-                  <a href="#contacts">Контакты</a>
+                  <a href="#biography"><FormattedMessage id='header.nav.biography' /></a>
+                  <a href="#skills"><FormattedMessage id='header.nav.skills' /></a>
+                  <a href="#projects"><FormattedMessage id='header.nav.projects' /></a>
+                  <a href="#slogan"><FormattedMessage id='header.nav.slogan' /></a>
+                  <a href="#contacts"><FormattedMessage id='header.nav.contacts' /></a>
                </nav>
             }
          </div>
       </div>
-   );
+   )
 }
 
-export default Header;
+export default Header

@@ -1,14 +1,19 @@
-import React from 'react';
-import { withRouter } from 'react-router-dom';
+import React from 'react'
+import { FormattedMessage } from 'react-intl'
+import { withRouter } from 'react-router-dom'
 import styles from './Error404.module.css'
 
 
 const Error404 = (props) => {
     return(
         <div className={styles.error404}>
-            <h3>No match for <code>"{props.location.pathname}"</code>. Please, check URL.</h3>
+            <h3>
+                <FormattedMessage id='error404.message.nomatch' />
+                <code> "{props.location.pathname}"</code>.&nbsp;
+                <FormattedMessage id='error404.message.hint' />
+            </h3>
         </div>
     )
 }
 
-export default withRouter(Error404);
+export default withRouter(Error404)

@@ -1,4 +1,5 @@
 import React from 'react'
+import { FormattedMessage } from 'react-intl'
 import styles from './SettingsMenu.module.css'
 import { Link } from 'react-router-dom'
 
@@ -31,8 +32,12 @@ const SettingsMenu = (props) => {
         <div className={styles.settingsMenu}>
             <div className={buttonsBlockStyle}>
                 <div className={styles.langSelect + ' ' + styles.theme_blue}>
-                    <span className={ruStyle} onClick={setRuLocale}>Ru</span>
-                    <span className={enStyle} onClick={setEnLocale}>En</span>
+                    <span className={ruStyle} onClick={setRuLocale}>
+                        <FormattedMessage id='settings.settingsMenu.lang_icon.ru' />
+                    </span>
+                    <span className={enStyle} onClick={setEnLocale}>
+                        <FormattedMessage id='settings.settingsMenu.lang_icon.en' />
+                    </span>
                 </div>
                 <div className={styles.displayStyle + ' ' + styles.theme_blue}>
                     <span onClick={setHtmlMode} className={htmlStyle}><Link to='/biography'>HTML</Link></span>
