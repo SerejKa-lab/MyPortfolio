@@ -92,7 +92,10 @@ class App extends React.Component {
                         <Contacts />
                      </div>
                   }
-                  <Footer spaDisplayMode={spaDisplayMode} colorTheme={colorTheme} />
+                  <Footer 
+                     spaDisplayMode={spaDisplayMode} 
+                     colorTheme={colorTheme} 
+                     locale={locale}/>
                </div>
             </ColorThemeProvider>
          </IntlProvider>

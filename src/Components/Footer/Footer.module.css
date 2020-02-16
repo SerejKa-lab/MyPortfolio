@@ -49,13 +49,22 @@
   .linksBox {
     margin: 0;
   }
-  .name, .copyright {
+  .name,
+  .copyright {
     font-size: 0.8em;
   }
 }
 
 @media ( max-width: 400px) {
-  .copyright, .name {
+  .copyright.ruLang,
+  .name.ruLang {
+    display: none;
+  }
+}
+
+@media ( max-width: 479px) {
+  .copyright.enLang,
+  .name.enLang {
     display: none;
   }
 }
