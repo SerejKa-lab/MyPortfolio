@@ -79,7 +79,7 @@ class App extends React.Component {
                            <Route path='/skills' component={Skills} />
                            <Route path='/projects' component={MyProjects} />
                            <Route path='/slogan' component={Slogan} />
-                           <Route path='/contacts' component={Contacts} />
+                           <Route path='/contacts' render={() => <Contacts locale={locale} />} />
                            <Route component={Error404} />
                         </Switch>
                      </div>
@@ -89,7 +89,7 @@ class App extends React.Component {
                         <Skills />
                         <MyProjects />
                         <Slogan />
-                        <Contacts />
+                        <Contacts locale={locale} />
                      </div>
                   }
                   <Footer 
