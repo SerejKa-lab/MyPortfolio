@@ -35,9 +35,15 @@ export default {
 
     'contacts.header': 'Контакты',
     'contacts.form.p_hold.name': 'Ваше имя',
-    'contacts.form.p_hold.email': 'Ваш e-mail',
     'contacts.form.p_hold.message': 'Введите сообщение...',
+    'contacts.form.name.required_err': 'Пожалуйста, введите ваше имя',
+    'contacts.form.name.max_err': 'Максимально допустимо 100 символов',
+    'contacts.form.message.required_err': 'Пожалуйста, напишите сообщение',
+    'contacts.form.message.max_err': 'Максимально допустимо 300 символов',
     'contacts.form.button': 'Отправить',
+
+    'contacts.form.p_hold.phone': 'Ваш номер телефона',
+    'contacts.form.p_hold.phone_error': 'Пожалуйста, введите правильный номер телефона',
 
     'footer.name': 'Сергей Кашко',
     'footer.rights': 'Все права защищены',

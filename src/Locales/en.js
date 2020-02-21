@@ -35,9 +35,15 @@ export default {
 
     'contacts.header': 'Contacts',
     'contacts.form.p_hold.name': 'Your name',
-    'contacts.form.p_hold.email': 'Your e-mail',
     'contacts.form.p_hold.message': 'Enter your message...',
+    'contacts.form.name.required_err': 'Please, enter your name',
+    'contacts.form.name.max_err': 'Maximum allowed characters is 100',
+    'contacts.form.message.required_err': 'Please write a few words',
+    'contacts.form.message.max_err': 'Maximum allowed characters is 300',
     'contacts.form.button': 'Send',
+    
+    'contacts.form.p_hold.phone': 'Your phone number',
+    'contacts.form.p_hold.phone_error': 'Please, enter correct phone number',
 
     'footer.name': 'Sergey Kashko',
     'footer.rights': 'All rights reserved',
