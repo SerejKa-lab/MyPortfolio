@@ -1,0 +1,22 @@
+.formikForm {
+    text-align: center;
+}
+
+.formikForm input {
+    margin-bottom: 5px;
+    font-size: 16px;
+    width: 100%;
+    height: 1.5em;
+    box-sizing: border-box;
+}
+
+.formikForm textarea {
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.error {
+    color: magenta;
+    margin-bottom: 8px;
+}
