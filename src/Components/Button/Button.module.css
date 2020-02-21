@@ -3,11 +3,16 @@
     margin: 25px;
     padding: 7px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .button:hover {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
+    -webkit-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    transform: scale(1.04);
     background-color: white;
-  }
+}
+
+.button:focus {
+    outline: none;
+}
