@@ -1,0 +1,11 @@
+.phoneNumber .PhoneInputCountry {
+    color: white;;
+    margin-bottom: 3px;
+    padding: 5px 3px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.phoneNumber input {
+    margin-bottom: 2px;
+}
