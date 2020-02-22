@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { injectIntl } from 'react-intl'
-import { telegramClient, chatId } from '../../TelegramClient/TelegramClient'
+import { telegramClient, chatId } from '../../Utils/TelegramClient/TelegramClient'
 import styles from './Contacts.module.css'
 import ComponentHeader from '../ComponentHeader/ComponentHeader'
 import PhoneNumber from './PhoneNumber/PhoneNumber'

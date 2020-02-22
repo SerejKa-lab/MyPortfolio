@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
-import { ColorThemeProvider } from './ReactContects/ColorThemeContext'
+import { ColorThemeProvider } from './Utils/ReactContects/ColorThemeContext'
 import { IntlProvider } from 'react-intl'
 import ru from './Locales/ru'
 import en from './Locales/en'
