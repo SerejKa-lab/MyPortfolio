@@ -3,7 +3,7 @@ import { injectIntl, FormattedMessage } from 'react-intl'
 import { withFormik, Form, Field } from 'formik'
 import * as yup from 'yup'
 import styles from './SendMessageFormik.module.css'
-import Button from '../../Button/Button'
+import Button from '../../Common/Button/Button'
 
 
 

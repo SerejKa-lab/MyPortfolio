@@ -13,6 +13,12 @@
     background-color: white;
 }
 
+.isDisabled:hover {
+    transform: none;
+    cursor: not-allowed;
+    background-color: buttonface;
+}
+
 .button:focus {
     outline: none;
 }

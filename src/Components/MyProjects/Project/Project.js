@@ -1,7 +1,7 @@
 import React from 'react'
 import { injectIntl, FormattedMessage } from 'react-intl'
 import styles from './Project.module.css'
-import Button from '../../Button/Button'
+import Button from '../../Common/Button/Button'
 
 
 

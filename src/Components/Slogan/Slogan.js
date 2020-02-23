@@ -2,7 +2,7 @@ import React from 'react'
 import { injectIntl } from 'react-intl'
 import styles from './Slogan.module.css'
 import ComponentHeader from '../ComponentHeader/ComponentHeader'
-import Button from '../Button/Button'
+import Button from '../Common/Button/Button'
 
 const Slogan = ({ intl }) => {
    return (
