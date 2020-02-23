@@ -10,23 +10,31 @@ import Button from '../../Button/Button'
 const SendMessageForm = (props) => {
     const { values, touched, errors, handleSubmit, isSubmitting } = props     // Formik props
     const { intl } = props      // react-intl props
-    const { onSubmit, phoneIsValid } = props     // external props
+    const { onSubmit, phoneIsValid, btnDisabled, submitNum } = props     // Contacts component props
 
     const submitFunc = (e) => {
         const { name, message } = values
         e.preventDefault()
-        if (phoneIsValid) {
-            onSubmit(name, message)
-            handleSubmit()
-        } else onSubmit()
+        if (!(isSubmitting || btnDisabled)) {   // if isSubmitting or btnDisabled do nothing
+            if (phoneIsValid) {
+                onSubmit(name, message)
+                handleSubmit()
+            } else onSubmit()
+        }
     }
+
+    const onClick = btnDisabled ? null : submitFunc
+
+    const errorsIsNotEmpty = Object.entries(errors).length !== 0
+    const phoneError = !phoneIsValid && submitNum > 0
+    const disabled = isSubmitting || btnDisabled || errorsIsNotEmpty || phoneError
 
     const nameHolder = intl.formatMessage({ id: 'contacts.form.p_hold.name' })
     const messageHolder = intl.formatMessage({ id: 'contacts.form.p_hold.message' })
     const buttonTitle = intl.formatMessage({ id: 'contacts.form.button' })
 
     return (
-        <Form className={styles.formikForm}>
+        <Form className={styles.formikForm} onSubmit={submitFunc}>
             <div>
                 <Field type="text" name="name" placeholder={nameHolder} />
                 { errors.name && touched.name && <div className={styles.error}>{errors.name}</div>}
@@ -38,7 +46,7 @@ const SendMessageForm = (props) => {
                     && <div className={styles.error}>{errors.message}</div>}
             </div>
 
-            <Button title={buttonTitle} onClick={submitFunc} disabled={isSubmitting} />
+            <Button title={buttonTitle} type='submit' onClick={onClick} disabled={disabled} />
         </Form>
     )
 }

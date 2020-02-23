@@ -5,32 +5,38 @@ import styles from './Contacts.module.css'
 import ComponentHeader from '../ComponentHeader/ComponentHeader'
 import PhoneNumber from './PhoneNumber/PhoneNumber'
 import SendMessageFormik from './SendMessageFormik/SendMessageFormik'
+import ModalWindow from '../Common/ModalWindow/ModalWindow'
 
 
 const Contacts = ({ intl, locale }) => {
 
-   const [phone, setPhone] = useState('')
+   const [phone, setPhone] = useState(null)
    const [phoneErr, setPhoneErr] = useState(false)
    const phoneIsValid = phone && !phoneErr
    const [submitNum, setSubmitNum] = useState(0)
+   const [showModal, setModal] = useState(false)
 
-   const onSubmit = (name, message) => {
-         if (phoneIsValid && name && message) {
-            const tMessage = `ОТ: ${name}, ТЕЛЕФОН: ${phone}, СООБЩЕНИЕ: '${message}'`
+   const onSubmit = async (name, message) => {
+      if (phoneIsValid && name && message) {
+         try {
+            const tMessage = 
+               `ОТ: ${name}, ТЕЛЕФОН: ${phone}, СООБЩЕНИЕ: '${message}'`
 
-            telegramClient.sendMessage(chatId, tMessage, {
+            await telegramClient.sendMessage(chatId, tMessage, {
                disable_web_page_preview: true,
                disable_notification: true
-            }).then(() => {
-               setPhone('')
-               setSubmitNum(0)
-               alert('your message is sent')
             })
-            telegramClient.getWebhookInfo().catch(() => {
-               alert('something went wrone...')
-            })
+            setPhone(null)
+            setSubmitNum(0)
+            setModal(true)
+            
+            await telegramClient.getWebhookInfo()
+         } catch (err) {
+            alert(err)
          }
+      } else {
          setSubmitNum(submitNum + 1)
+      }
    }
 
    const componentTitle = intl.formatMessage({ id: 'contacts.header' })
@@ -52,8 +58,19 @@ const Contacts = ({ intl, locale }) => {
                {(!phone || phoneErr) && submitNum !==0
                   && <div className={styles.errorField}>{phoneErrMessage}</div> }
 
-               <SendMessageFormik onSubmit={onSubmit} phoneIsValid={phoneIsValid} />
+               <SendMessageFormik 
+                  onSubmit={onSubmit}
+                  phoneIsValid={phoneIsValid}
+                  btnDisabled={showModal}
+                  submitNum={submitNum} />
             </div>
+            { showModal 
+               && <ModalWindow 
+                     showModal={showModal}
+                     message={'Your message is sent!\nThank you!'}
+                     onClick={() => setModal(false)}
+                  /> 
+            }
          </div>
       </div>
    )
