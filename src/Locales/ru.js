@@ -12,28 +12,47 @@ export default {
     'greeting.text': 'Сергей Кашко. React-разработчик.',
 
     'biography.header': 'Биография',
-    'biography.description': 'Никогда не откладывай на завтра то, что можешь сделать послезавтра. Марк Твен',
+    'biography.welcome': 'Приветствую Вас!',
+    'biography.born': 'Меня зовут Кашко Сергей. Родился 28 августа 1986 года.',
+    'biography.scool': `В 2003 году закончил физико-математический класс гимназии №1 города Витебска.`,
+    'biography.university': `В 2008 году закончил Белорусский Государственный Университет, 
+        факультет Родиофизики и Компьютерных Технологий по специальности «Радиофизик».`,
+    'biography.work_ligo': `С 2008 по 2010 года работал инженером по установке 
+        и обслуживанию компьютерного оборудования и систем в ООО «Лиго».`,
+    'biography.work_yandex': `С 2010 по 2019 года работал специалистом по оценке качества 
+        поисковых алгоритмов и предоставлению данных для машинного обучения (асессор) в ООО «Яндекс» .`,
+    'biography.personal_qualities.header': 'Личный качества.',
+    'biography.personal_qualities': `Открытый и коммуникабельный, ответственный и требовательный в работе, 
+        люблю ставить цели и их достигать. В людях ценю ответственность, взаимоуважение, доброту и 
+        открытость, оптимизм и чувство юмора.`,
+    'biography.interests': 'Интересы.',
+    'biography.self_development': `Веду здоровый и активный образ жизни. Посещаю курсы, 
+        тренинги и семинары по вопросам повышения профессиональной квалификации, 
+        саморазвития и личностного роста. Люблю путешествовать, а также проводить время 
+        в кругу родных и друзей.`,
 
-    'skills.header': 'Навыки',
-    'skills.html.description': 'Опыт работы с HTML-5',
-    'skills.css.description': 'Опыт работы с CSS-3',
-    'skills.js.description': 'Опыт работы с JS',
-    'skills.react.description': 'Опыт работы с React',
-    'skills.redux.description': 'Опыт работы с Redux',
+    'skills.header': 'Знания и навыки',
+    'skills.html.description': 'Вёрстка на HTML-5',
+    'skills.css.description': 'Стилизация и адаптивность на CSS-3',
+    'skills.react.description': 'Интерактивность и эффективная отрисовка DOM-элементов с React',
+    'skills.redux.description': 'Управление данными приложения с Redux',
+    'skills.rest.description': 'Взаимодействие с серверным API',
+    'skills.git.description': 'Версионный контроль c Git',
 
     'projects.header': 'Мои работы',
-    'projects.proj1.title': 'Проект 1',
-    'projects.proj1.desctiption': 'Описание проекта',
-    'projects.proj2.title': 'Проект 2',
-    'projects.proj2.desctiption': 'Описание проекта',
-    'projects.proj3.title': 'Проект 3',
-    'projects.proj3.desctiption': 'Описание проекта',
+    'projects.portfolio.description': `Внедрённые библиотеки: React, Redux, Axios, 
+        react-redux, redux-thunk, react-router-dom, react-intl, classnames,
+        messaging-api-telegram, react-phone-number-input, formik, yup, gh-pages`,
+    'projects.tasksManager.description': `Внедрённые библиотеки: React, Redux, Axios, 
+        react-redux, redux-thunk, react-router-dom, gh-pages`,
+    'projects.netWork.description': `Внедрённые библиотеки: React, Redux, Axios, 
+    react-redux, redux-thunk, redux-form, react-router-dom, gh-pages`,
+    'projects.simpleCounter.description': 'Внедрённые библиотеки: React, Redux',
+    'projects.github.title': 'Гитхаб репозиторий',
     'projects.button.watch': 'Смотреть',
 
-    'slogan.header': 'Приглашаю к сотрудничеству!',
-    'slogan.button': 'Сотрудничать',
-
-    'contacts.header': 'Контакты',
+    'contacts.header': 'Приглашаю к сотрудничеству!',
+    'contacts.form.phone_number.hint': `Пожалуйста, введите номер в международном формате, например: 375 29 555 55 55. Или выберите свою страну и введите внутренний номер, например: "Беларусь" 29 555 55 55`,
     'contacts.form.p_hold.name': 'Ваше имя',
     'contacts.form.p_hold.message': 'Введите сообщение...',
     'contacts.form.name.required_err': 'Пожалуйста, введите ваше имя',
@@ -49,7 +68,7 @@ export default {
     'footer.rights': 'Все права защищены',
 
     'error404.message.nomatch': 'Ничего не найдено по адресу',
-    'error404.message.hint': 'Пожалуйста, проверьте URL-адрес.'
+    'error404.message.hint': 'Пожалуйста, проверьте URL-адрес.',
 
 }
 

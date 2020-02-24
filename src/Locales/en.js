@@ -12,28 +12,50 @@ export default {
     'greeting.text': 'Sergey Kashko. React-developer.',
 
     'biography.header': 'Biography',
-    'biography.description': 'Never put off until tomorrow what you can do the day after tomorrow. Mark Twain',
+    'biography.welcome': 'Welcome!',
+    'biography.born': 'My name is Sergey Kashko. I was born on August 28, 1986.',
+    'biography.scool': `In 2003, I graduated from the physics and mathematics class 
+        of the gymnasium No. 1 in Vitebsk.`,
+    'biography.university': `In 2008 I graduated from Belarusian state University faculty 
+        of Radio physics and computer technology as radio physicist.`,
+    'biography.work_ligo': `From 2008 to 2010 I worked as engineer for installation 
+        and maintenance of computer equipment and systems for Ligo LLC.`,
+    'biography.work_yandex': `From 2010 to 2019 I worked as specialist in evaluating the quality 
+        of search algorithms and providing data for machine learning (assessor) for Yandex LLC.`,
+    'biography.personal_qualities.header': 'Personal qualities.',
+    'biography.personal_qualities': `Open and sociable, responsible and demanding in work. 
+        I like to set goals and achieve them. I appreciate responsibility, mutual respect, 
+        kindness and openness, optimism and sense of humor in people.`,
+    'biography.interests': 'Interests',
+    'biography.self_development': `I lead a healthy and active lifestyle. Attend courses, 
+        trainings and seminars on professional development, self-development and personal growth. 
+        I like to travel and spend time with my family and friends.`,
 
-    'skills.header': 'Skills',
-    'skills.html.description': 'HTML-5 work experience',
-    'skills.css.description': 'CSS-3 work experience',
+    'skills.header': 'Knowledge and skills',
+    'skills.html.description': 'Page markup using HTML-5',
+    'skills.css.description': 'Styling and adaptability of pages using CSS-3',
     'skills.js.description': 'JS work experience',
-    'skills.react.description': 'React work experience',
-    'skills.redux.description': 'Redux work experience',
+    'skills.react.description': 'Interactivity and efficient rendering of DOM elements using React',
+    'skills.redux.description': 'Managing app data with Redux',
+    'skills.rest.description': 'Server API interaction',
+    'skills.git.description': 'Version control implementation with Git',
 
     'projects.header': 'My projects',
-    'projects.proj1.title': 'Project 1',
-    'projects.proj1.desctiption': 'Project description',
-    'projects.proj2.title': 'Project 2',
-    'projects.proj2.desctiption': 'Project description',
-    'projects.proj3.title': 'Project 3',
-    'projects.proj3.desctiption': 'Project description',
+    'projects.portfolio.description': `Applied libraries: React, Redux, Axios, 
+        react-redux, redux-thunk, react-router-dom, react-intl, classnames,
+        messaging-api-telegram, react-phone-number-input, formik, yup, gh-pages`,
+    'projects.tasksManager.description': `Applied libraries: React, Redux, Axios, 
+        react-redux, redux-thunk, react-router-dom, gh-pages`,
+    'projects.netWork.description': `Applied libraries: React, Redux, Axios, 
+    react-redux, redux-thunk, redux-form, react-router-dom, gh-pages`,
+    'projects.simpleCounter.description': 'Applied libraries: React, Redux',
+    'projects.github.title': 'Github repository',
     'projects.button.watch': 'Watch',
 
-    'slogan.header': 'Invite to cooperation!',
-    'slogan.button': 'Cooperate',
-
-    'contacts.header': 'Contacts',
+    'contacts.header': 'Invite you to cooperate!',
+    'contacts.form.phone_number.hint': `Please enter the number in international format, 
+        for example: 375 29 555 55 55. Or select your country and enter the internal number, 
+        for example: "Belarus" 29 555 55 55`,
     'contacts.form.p_hold.name': 'Your name',
     'contacts.form.p_hold.message': 'Enter your message...',
     'contacts.form.name.required_err': 'Please, enter your name',
@@ -49,7 +71,7 @@ export default {
     'footer.rights': 'All rights reserved',
 
     'error404.message.nomatch': 'Nothing match',
-    'error404.message.hint': 'Please, check the URL.'
+    'error404.message.hint': 'Please, check the URL.',
 
 }
 
