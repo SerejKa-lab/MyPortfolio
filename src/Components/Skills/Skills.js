@@ -3,35 +3,47 @@ import styles from "./Skills.module.css"
 import { injectIntl } from 'react-intl'
 import SkillSubject from "./SkillSubject/SkillSubject"
 import ComponentHeader from "../ComponentHeader/ComponentHeader"
+import html from '../../Assets/Images/Skills/html.png'
+import css from '../../Assets/Images/Skills/css.png'
+import react from '../../Assets/Images/Skills/react.png'
+import redux from '../../Assets/Images/Skills/redux.png'
+import rest from '../../Assets/Images/Skills/rest.png'
+import git from '../../Assets/Images/Skills/git.png'
 
 const Skills = ({ intl }) => {
 
    const subjects = [
       {
-         title: "HTML",
-         src:
-            "https://im0-tub-by.yandex.net/i?id=7e3a96f8325b8ac20a953490bb87f8aa&n=13",
-         description: "Описание опыта HTML"
+         subject: "HTML",
+         src: html,
       },
       {
-         title: "CSS",
-         src:
-            "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png",
-         description: "Описание опыта CSS"
+         subject: "CSS",
+         src: css,
       },
       {
-         title: "React",
-         src:
-            "https://yt3.ggpht.com/a/AGF-l79gdFQSyzDoqL-sXaq4XXWkQ9TgezvAX-fMXQ=s900-c-k-c0xffffffff-no-rj-mo",
-         description: "Описание опыта React"
+         subject: "Git",
+         src: git,
+      },
+      {
+         subject: "React",
+         src: react,
+      },
+      {
+         subject: "redux",
+         src: redux,
+      },
+      {
+         subject: "rest",
+         src: rest,
       }
    ]
 
    const subjectsArr = subjects.map((el, i) => {
       const description = 
-         intl.formatMessage({ id: `skills.${el.title.toLowerCase() }.description` })
+         intl.formatMessage({ id: `skills.${el.subject.toLowerCase() }.description` })
       return (
-         <SkillSubject title={el.title} src={el.src} description={description} key={i} />
+         <SkillSubject src={el.src} description={description} key={i} />
       )
    })
 

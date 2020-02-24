@@ -1,15 +1,37 @@
 .mySkill {
-  width: 450px;
-  background-color: white;
-  border: 1px solid rgb(61, 247, 55);
+  width: 300px;
+  border: 1px solid;
+  border-radius: 5px;
   margin: 10px 0;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 
-@media ( max-width: 592px ) {
+.theme_blue {
+  border-color: rgb(27, 212, 252);
+}
+
+.theme_darkRed {
+  border-color: rgb(247, 2, 168);
+}
+
+.theme_green {
+  border-color: rgb(48, 254, 118);
+}
+
+.theme_maroon {
+  border-color: rgb(255, 0, 237);
+}
+
+.theme_violet {
+  border-color: rgb(186, 138, 255);
+}
+
+
+@media ( max-width: 592px) {
   .mySkill {
     width: 100%
   }
@@ -22,18 +44,16 @@
   align-items: center;
 }
 
-
 .technology img {
-  height: 70px;
+  height: 120px;
 }
 
 .technology span {
   font-size: 25px;
 }
 
-.title,
 .description {
-  text-align: center;
+  font-family: "Montserrat", sans-serif;
   margin: 5px;
-  background-color: gainsboro;
+  color: white;
 }
