@@ -1,23 +1,24 @@
-import React from "react"
+import React from 'react'
 import { injectIntl } from 'react-intl'
-import styles from "./MyProjects.module.css"
-import Project from "./Project/Project"
-import ComponentHeader from "../ComponentHeader/ComponentHeader"
+import styles from './MyProjects.module.css'
+import Project from './Project/Project'
+import ComponentHeader from '../ComponentHeader/ComponentHeader'
 
 const MyProjects = ({ intl }) => {
 
    const projects = [
-      { title: 'Проект 1', description: 'Описание проекта' },
-      { title: 'Проект 2', description: 'Описание проекта' },
-      { title: 'Проект 3', description: 'Описание проекта' },
+      { title: 'tasksManager', GHLink: 'https://github.com/SerejKa-lab/TasksManager', 
+         projectLink: 'https://serejka-lab.github.io/TasksManager' },
+      { title: 'netWork', GHLink: 'https://github.com/SerejKa-lab/NetWork', 
+         projectLink: 'https://serejka-lab.github.io/NetWork' },
+      { title: 'portfolio', GHLink: 'https://github.com/SerejKa-lab/MyPortfolio', 
+         projectLink: 'https://github.com/SerejKa-lab/MyPortfolio' },
+      { title: 'simpleCounter', GHLink: 'https://github.com/SerejKa-lab/Counter', 
+         projectLink: 'https://serejka-lab.github.io/Counter' }
    ]
 
-   const projectsArr = projects.map((proj, i) => {
-      const title = intl.formatMessage({ id: `projects.proj${i+1}.title`})
-      const description = intl.formatMessage({ id: `projects.proj${i+1}.desctiption`})
-      return (
-         <Project title={title} description={description} key={i} projOrder={i+1} />)
-   })
+   const projectsArr = projects.map((proj, i) => 
+      <Project title={proj.title} GHLink={proj.GHLink} projectLink={proj.projectLink} key={i} />)
 
    return (
       <div id='projects' className={styles.myProjects}>

@@ -16,7 +16,6 @@
 .projectsContainer {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid white;
 }
 
 
@@ -26,9 +25,9 @@
     }
 }
 
-@media (min-width: 1133px) {
+/* @media (min-width: 1133px) {
     .projectsContainer {
         justify-content: space-between;
     }
-}
+} */
 
