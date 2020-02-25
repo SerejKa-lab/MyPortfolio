@@ -41,14 +41,13 @@ export default {
     'skills.git.description': 'Version control implementation with Git',
 
     'projects.header': 'My projects',
-    'projects.portfolio.description': `Applied libraries: React, Redux, Axios, 
-        react-redux, redux-thunk, react-router-dom, react-intl, classnames,
-        messaging-api-telegram, react-phone-number-input, formik, yup, gh-pages`,
+    'projects.portfolio.description': `Applied libraries: React, react-router-dom,
+        react-intl, classnames, messaging-api-telegram, react-phone-number-input, 
+        formik, yup, gh-pages`,
     'projects.tasksManager.description': `Applied libraries: React, Redux, Axios, 
         react-redux, redux-thunk, react-router-dom, gh-pages`,
     'projects.netWork.description': `Applied libraries: React, Redux, Axios, 
     react-redux, redux-thunk, redux-form, react-router-dom, gh-pages`,
-    'projects.simpleCounter.description': 'Applied libraries: React, Redux',
     'projects.github.title': 'Github repository',
     'projects.button.watch': 'Watch',
 
