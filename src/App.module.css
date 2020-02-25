@@ -13,21 +13,21 @@
 }
 
 .theme_blue {
-    background-image: url(./Assets/Images/neuro-blue.jpg);
+    background-image: url(./Assets/Images/ColorThemes/neuro-blue.jpg);
 }
 
 .theme_darkRed {
-    background-image: url(./Assets/Images/neuro-darkRed.jpg);
+    background-image: url(./Assets/Images/ColorThemes/neuro-darkRed.jpg);
 }
 
 .theme_green {
-    background-image: url(./Assets/Images/neuro-green.png);
+    background-image: url(./Assets/Images/ColorThemes/neuro-green.png);
 }
 
 .theme_maroon {
-    background-image: url(./Assets/Images/neuro-maroon.png);
+    background-image: url(./Assets/Images/ColorThemes/neuro-maroon.png);
 }
 
 .theme_violet {
-    background-image: url(./Assets/Images/neuro-violet.png);
+    background-image: url(./Assets/Images/ColorThemes/neuro-violet.png);
 }
