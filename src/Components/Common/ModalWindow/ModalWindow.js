@@ -25,8 +25,8 @@ const ModalWindow = ({ showModal, onClick, message }) => {
                     <>
                         {showModal
                             && <Portal>
-                                <div ref={divRef} className={styles.modal} onClick={onClick}
-                                    autoFocus={true} tabIndex='0' onKeyDown={onClick}>
+                                <div className={styles.modal} onClick={onClick}
+                                    ref={divRef} tabIndex='0' onKeyDown={onClick}>
                                     <div className={contentStyles}>
                                         {message}
                                     </div>

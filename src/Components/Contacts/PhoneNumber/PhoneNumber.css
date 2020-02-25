@@ -1,5 +1,14 @@
+.phoneNumber_wrapper {
+    position: relative;
+}
+
+.phoneNumber {
+    position: relative;
+}
+
 .phoneNumber .PhoneInputCountry {
-    color: white;;
+    color: white;
+    ;
     margin-bottom: 3px;
     padding: 5px 3px;
     border: 1px solid white;
@@ -8,4 +17,13 @@
 
 .phoneNumber input {
     margin-bottom: 2px;
+}
+
+.question {
+    position: absolute;
+    top: 5.5px;
+    right: 5px;
+    color: rgb(51, 51, 63);
+    cursor: pointer;
+    font-size: 1.3rem;
 }

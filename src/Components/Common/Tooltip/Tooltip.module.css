@@ -1,0 +1,59 @@
+.tooltip {
+    position: absolute;
+    background-color: rgb(240, 240, 240);
+    color: rgb(85, 47, 11);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(112, 45, 29);
+    font-style: italic;
+    width: fit-content;
+    max-width: 93%;
+    z-index: 5;
+}
+
+.bottom {
+    top: 30px;
+    left: 15px;
+}
+
+.top {
+    bottom: 45px;
+    left: 15px;
+}
+
+.isHidden {
+    display: none;
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 17px;
+    transform: translate(-50%, 50%) rotate(45deg);
+    background: inherit;
+    border: 1px solid rgb(112, 45, 29);
+    width: 10px;
+    height: 10px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+/* ---- delete icon ----- */
+
+.delete {
+    position: absolute;
+    top: 0px;
+    right: -3px;
+    padding: 0 5px;
+    color: rgb(22, 19, 37);
+    cursor: pointer;
+}
+
+.delete:hover {
+    color: mediumvioletred;
+}
+
+.delete:active {
+    outline: none;
+}
