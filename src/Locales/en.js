@@ -35,7 +35,7 @@ export default {
     'skills.html.description': 'Page markup using HTML-5',
     'skills.css.description': 'Styling and adaptability of pages using CSS-3',
     'skills.js.description': 'JS work experience',
-    'skills.react.description': 'Interactivity and efficient rendering of DOM elements using React',
+    'skills.react.description': 'Interactivity and efficient rendering of DOM-elements using React',
     'skills.redux.description': 'Managing app data with Redux',
     'skills.rest.description': 'Server API interaction',
     'skills.git.description': 'Version control implementation with Git',
@@ -54,7 +54,7 @@ export default {
 
     'contacts.header': 'Invite you to cooperate!',
     'contacts.form.phone_number.hint': `Please enter the number in international format, 
-        for example: 375 29 555 55 55. Or select your country and enter the internal number, 
+        for example: 375 29 555 55 55. Or select your country and enter the internal phone number, 
         for example: "Belarus" 29 555 55 55`,
     'contacts.form.p_hold.name': 'Your name',
     'contacts.form.p_hold.message': 'Enter your message...',

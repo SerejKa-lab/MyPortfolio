@@ -20,8 +20,6 @@ const Header = (props) => {
                      <FormattedMessage id='header.nav.skills' /></NavLink>
                   <NavLink activeClassName={styles.active} to='/projects'>
                      <FormattedMessage id='header.nav.projects' /></NavLink>
-                  <NavLink activeClassName={styles.active} to='/slogan'>
-                     <FormattedMessage id='header.nav.slogan' /></NavLink>
                   <NavLink activeClassName={styles.active} to='/contacts'>
                      <FormattedMessage id='header.nav.contacts' /></NavLink>
                </nav>
@@ -29,7 +27,6 @@ const Header = (props) => {
                   <a href="#biography"><FormattedMessage id='header.nav.biography' /></a>
                   <a href="#skills"><FormattedMessage id='header.nav.skills' /></a>
                   <a href="#projects"><FormattedMessage id='header.nav.projects' /></a>
-                  <a href="#slogan"><FormattedMessage id='header.nav.slogan' /></a>
                   <a href="#contacts"><FormattedMessage id='header.nav.contacts' /></a>
                </nav>
             }

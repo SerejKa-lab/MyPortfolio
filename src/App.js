@@ -7,7 +7,6 @@ import en from './Locales/en'
 import styles from './App.module.css'
 import Header from './Components/Header/Header'
 import Skills from './Components/Skills/Skills'
-import Slogan from './Components/Slogan/Slogan'
 import Contacts from './Components/Contacts/Contacts'
 import Footer from './Components/Footer/Footer'
 import MyProjects from './Components/MyProjects/MyProjects'
@@ -75,12 +74,11 @@ class App extends React.Component {
                         <Switch>
                            <Redirect exact from='/' to='/biography' />
                            <Redirect exact from='/portfolio' to='/biography' />
-                           <Route path='/biography' exact component={Biography} />
-                           <Route path='/skills' component={Skills} />
-                           <Route path='/projects' component={MyProjects} />
-                           <Route path='/slogan' component={Slogan} />
-                           <Route path='/contacts' render={() => <Contacts locale={locale} />} />
-                           <Route component={Error404} />
+                           <Route exact path='/biography' component={Biography} />
+                           <Route exact path='/skills' component={Skills} />
+                           <Route exact path='/projects' component={MyProjects} />
+                           <Route exact path='/contacts' render={() => <Contacts locale={locale} />} />
+                           <Route exact component={Error404} />
                         </Switch>
                      </div>
 
@@ -88,7 +86,6 @@ class App extends React.Component {
                         <Biography />
                         <Skills />
                         <MyProjects />
-                        <Slogan />
                         <Contacts locale={locale} />
                      </div>
                   }

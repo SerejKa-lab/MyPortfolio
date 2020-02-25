@@ -1,6 +1,6 @@
-import React from 'react';
-import styles from './ComponentHeader.module.css';
-import { ColorThemeConsumer } from '../../Utils/ReactContects/ColorThemeContext';
+import React from 'react'
+import styles from './ComponentHeader.module.css'
+import { ColorThemeConsumer } from '../../Utils/ReactContects/ColorThemeContext'
 
 const ComponentHeader = ({ title }) =>
     <ColorThemeConsumer>
@@ -12,4 +12,4 @@ const ComponentHeader = ({ title }) =>
     </ColorThemeConsumer>
 
 
-export default ComponentHeader;
+export default ComponentHeader
