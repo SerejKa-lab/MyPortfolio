@@ -4,16 +4,7 @@ import styles from './MyProjects.module.css'
 import Project from './Project/Project'
 import ComponentHeader from '../ComponentHeader/ComponentHeader'
 
-const MyProjects = ({ intl }) => {
-
-   const projects = [
-      { title: 'tasksManager', GHLink: 'https://github.com/SerejKa-lab/TasksManager', 
-         projectLink: 'https://serejka-lab.github.io/TasksManager' },
-      { title: 'netWork', GHLink: 'https://github.com/SerejKa-lab/NetWork', 
-         projectLink: 'https://serejka-lab.github.io/NetWork' },
-      { title: 'portfolio', GHLink: 'https://github.com/SerejKa-lab/MyPortfolio', 
-         projectLink: 'https://serejka-lab.github.io/MyPortfolio' },
-   ]
+const MyProjects = ({ intl, projects }) => {
 
    const projectsArr = projects.map((proj, i) => 
       <Project title={proj.title} GHLink={proj.GHLink} projectLink={proj.projectLink} key={i} />)

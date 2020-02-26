@@ -5,6 +5,8 @@ import { IntlProvider } from 'react-intl'
 import ru from './Locales/ru'
 import en from './Locales/en'
 import styles from './App.module.css'
+import { projects } from './BLL/appData'
+import { skills } from './BLL/appData'
 import Header from './Components/Header/Header'
 import Skills from './Components/Skills/Skills'
 import Contacts from './Components/Contacts/Contacts'
@@ -75,8 +77,8 @@ class App extends React.Component {
                            <Redirect exact from='/' to='/biography' />
                            <Redirect exact from='/portfolio' to='/biography' />
                            <Route exact path='/biography' component={Biography} />
-                           <Route exact path='/skills' component={Skills} />
-                           <Route exact path='/projects' component={MyProjects} />
+                           <Route exact path='/skills' render={() => <Skills skills={skills} />} />
+                           <Route exact path='/projects' render={() => <MyProjects projects={projects} />} />
                            <Route exact path='/contacts' render={() => <Contacts locale={locale} />} />
                            <Route exact component={Error404} />
                         </Switch>
@@ -84,8 +86,8 @@ class App extends React.Component {
 
                      : <div>
                         <Biography />
-                        <Skills />
-                        <MyProjects />
+                        <Skills skills={skills} />
+                        <MyProjects projects={projects} />
                         <Contacts locale={locale} />
                      </div>
                   }
