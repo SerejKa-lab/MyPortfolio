@@ -1,8 +1,7 @@
 import { createContext }  from 'react'
 
-const {
-    Provider : ColorThemeProvider, 
-    Consumer :  ColorThemeConsumer
-} = createContext()
+const ColorThemeContext = createContext()
 
-export {ColorThemeProvider, ColorThemeConsumer}
+const {Provider : ColorThemeProvider} = ColorThemeContext
+
+export {ColorThemeProvider, ColorThemeContext}
