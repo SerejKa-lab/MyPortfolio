@@ -1,11 +1,11 @@
 .iconWrapper {
-    margin-top: 5px;
+    margin-top: 3px;
     margin-right: 5px;
     cursor: pointer;
 }
 
-@media ( max-width: 545px) {
+@media ( max-width: 363px) {
     .iconWrapper {
-        margin-top: 13px;
+        margin-top: 11px;
     }
 }

@@ -2,7 +2,7 @@
   width: 300px;
   border: 1px solid;
   border-radius: 5px;
-  margin: 10px 0;
+  margin: 10px 5px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,20 @@
 }
 
 
-@media ( max-width: 592px) {
+@media ( max-width: 829px) {
+  .mySkill {
+    margin: 10px 0;
+    width: 60%
+  }
+}
+
+@media ( max-width: 599px) {
+  .mySkill {
+    width: 80%
+  }
+}
+
+@media ( max-width: 460px) {
   .mySkill {
     width: 100%
   }

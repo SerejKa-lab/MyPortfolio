@@ -12,8 +12,7 @@ export default {
     'greeting.text': 'Sergey Kashko. React-developer.',
 
     'biography.header': 'Biography',
-    'biography.welcome': 'Welcome!',
-    'biography.born': 'My name is Sergey Kashko. I was born on August 28, 1986.',
+    'biography.born': 'Welcome! My name is Sergey Kashko. I was born on August 28, 1986.',
     'biography.scool': `In 2003, I graduated from the physics and mathematics class 
         of the gymnasium No. 1 in Vitebsk.`,
     'biography.university': `In 2008 I graduated from Belarusian state University faculty 

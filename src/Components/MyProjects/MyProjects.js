@@ -12,7 +12,7 @@ const MyProjects = ({ intl }) => {
       { title: 'netWork', GHLink: 'https://github.com/SerejKa-lab/NetWork', 
          projectLink: 'https://serejka-lab.github.io/NetWork' },
       { title: 'portfolio', GHLink: 'https://github.com/SerejKa-lab/MyPortfolio', 
-         projectLink: 'https://github.com/SerejKa-lab/MyPortfolio' },
+         projectLink: 'https://serejka-lab.github.io/MyPortfolio' },
    ]
 
    const projectsArr = projects.map((proj, i) => 

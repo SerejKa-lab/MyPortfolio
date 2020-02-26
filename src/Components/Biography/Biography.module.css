@@ -8,7 +8,9 @@
 .biography img {
   width: 25%;
   margin: 10px;
+  margin-top: 18px;
   border-radius: 10px;
+  float: left;
 }
 
 .container {
@@ -46,5 +48,39 @@
   text-indent: 20px;
   text-align: justify;
   line-height: 1.5em;
-  font-size: 0.9em;
+  font-size: 0.95em;
+}
+
+@media (max-width: 1117px) {
+  .biography img {
+    width: 33%;
+  }
+  .description {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .biography img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 667px) {
+  .biography img {
+    width: 50%;
+    float: none
+  }
+  .description {
+    text-align: center;
+  }
+  .description p {
+    font-size: 0.9em;
+  }
+}
+
+@media ( max-width: 400px ) {
+  .description p {
+    font-size: 0.8em;
+  }
 }

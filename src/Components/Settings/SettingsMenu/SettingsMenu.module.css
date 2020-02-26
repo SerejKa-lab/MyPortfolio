@@ -7,7 +7,7 @@
     border-radius: 5px;
 }
 
-@media( max-width: 545px) {
+@media( max-width: 363px) {
     .settingsMenu {
         top: 49px;
     }

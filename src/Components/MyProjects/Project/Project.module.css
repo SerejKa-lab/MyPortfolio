@@ -92,3 +92,14 @@
     background-color: rgb(186, 138, 255);
   }
   
+
+  @media (max-width: 1199px) {
+    .project {
+        margin: 15px 5px;
+    }
+}
+  @media (max-width: 575px) {
+    .project {
+        margin: 15px 0;
+    }
+}

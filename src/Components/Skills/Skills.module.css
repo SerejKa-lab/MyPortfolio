@@ -10,6 +10,7 @@
   border: 1px solid;
   width: 80%;
   margin-bottom: 30px;
+  padding: 0 5px;
   background: radial-gradient(rgb(13, 12, 26) 30%, rgb(169, 169, 169, 0.4));
   border-radius: 10px;
 }
@@ -18,20 +19,9 @@
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 10px;
+  justify-content: space-around;
 }
 
 .skills .container span {
   text-align: center;
 }
-
-@media ( min-width: 530px) {
-  .skillsBox {
-    justify-content: space-around;
-  }
-}
-
-/* @media ( min-width: 1181px) {
-  .skillsBox {
-    justify-content: space-between;
-  }
-} */

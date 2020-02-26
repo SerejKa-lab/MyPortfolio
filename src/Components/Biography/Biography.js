@@ -10,9 +10,8 @@ const Biography = ({ intl }) => {
          <div className={styles.container}>
             <ComponentHeader title={intl.formatMessage({ id: 'biography.header' })} />
             <div className={styles.biographyBox}>
-               <img src={photo} alt='biography' />
                <div className={styles.description}>
-                  <h2><FormattedMessage id='biography.welcome' /></h2>
+                  <img src={photo} alt='biography' />
                   <p><FormattedMessage id='biography.born' /></p>
                   <p><FormattedMessage id='biography.scool' /></p>
                   <p><FormattedMessage id='biography.university' /></p>

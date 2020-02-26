@@ -45,7 +45,7 @@
   max-width: 200px;
 }
 
-@media ( max-width: 718px) {
+@media ( max-width: 790px) {
   .linksBox {
     margin: 0;
   }
