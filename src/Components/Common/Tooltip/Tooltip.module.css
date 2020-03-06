@@ -25,6 +25,8 @@
     display: none;
 }
 
+/* --- tooltip arrow --- */
+
 .tooltip::after {
     content: '';
     position: absolute;
@@ -43,8 +45,8 @@
 
 .delete {
     position: absolute;
-    top: 0px;
-    right: -3px;
+    top: 1px;
+    right: -2px;
     padding: 0 5px;
     color: rgb(22, 19, 37);
     cursor: pointer;

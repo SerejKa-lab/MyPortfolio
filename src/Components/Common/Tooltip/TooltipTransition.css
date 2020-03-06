@@ -1,0 +1,18 @@
+.tt-enter {
+    opacity: 0;
+    transform: scale(0.7, 0.7);
+}
+.tt-enter-active {
+    opacity: 1;
+    transform: scale(1, 1);
+    transition: all 330ms;
+}
+
+.tt-exit {
+    opacity: 1;
+}
+.tt-exit-active {
+    opacity: 0;
+    transform: scale(0, 0);
+    transition: all 500ms;
+}

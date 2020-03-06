@@ -4,6 +4,7 @@ import styles from './ModalWindow.module.css'
 import classNames from 'classnames'
 import { ColorThemeContext } from '../../../Utils/ReactContects/ColorThemeContext'
 import { useContext } from 'react'
+import { Transition } from 'react-transition-group'
 
 
 const ModalWindow = ({ showModal, onClick, message }) => {
@@ -20,15 +21,25 @@ const ModalWindow = ({ showModal, onClick, message }) => {
         styles[`theme_${colorTheme}`]
     )
 
-    if (showModal) return (
+    return (
         <Portal>
-            <div className={styles.modal} onClick={onClick}
-                ref={divRef} tabIndex='0' onKeyDown={onClick}>
-                <div className={contentStyles}>
-                    {message}
-                </div>
-            </div>
-        </Portal>
+            <Transition
+                in={showModal}
+                timeout={330}
+                mountOnEnter
+                unmountOnExit
+                appear
+            >
+                {state => 
+                    <div className={styles.modal + ' ' + styles[state]} onClick={onClick}
+                        ref={divRef} tabIndex='0' onKeyDown={onClick}>
+                        <div className={contentStyles}>
+                            {message}
+                        </div>
+                    </div>
+                }
+            </Transition>
+        </Portal >
     )
 }
 

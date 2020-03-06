@@ -7,6 +7,8 @@ import en from 'react-phone-number-input/locale/en'
 import PhoneInput, { isValidPhoneNumber } from 'react-phone-number-input'
 import { injectIntl } from 'react-intl'
 import Tooltip from '../../Common/Tooltip/Tooltip'
+import Icon from '../../Common/Icon/Icon'
+
 
 
 
@@ -24,12 +26,13 @@ const PhoneNumber = ({ phone, setPhone, setPhoneErr, placeholder, locale, intl }
             setHint(true)
         }
     }
-    const showHint = () => setHint(true)
     const hideHint = () => {
         setHint(false)
         setCount(hintClosedNumb+1)
     }
-    const hideHintOnEsc = (e) => {
+    const toggleHint = () => setHint(!displayHint)
+    
+        const hideHintOnEsc = (e) => {
         if (e.keyCode === 27) hideHint()
     }
 
@@ -46,8 +49,8 @@ const PhoneNumber = ({ phone, setPhone, setPhoneErr, placeholder, locale, intl }
                     onChange={onNumberChange}
                 />
             </div>
-            {displayHint && <Tooltip hint={hint} onClick={hideHint} />}
-            { hintClosedNumb > 0 && <i className={'fa fa-question-circle question'} onClick={showHint} /> }
+            <Tooltip hint={hint} onClick={hideHint} displayHint={displayHint} />
+            { hintClosedNumb > 0 && <Icon name='question-circle' onClick={toggleHint} className='question' /> }
         </div>
     )
 }
