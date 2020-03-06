@@ -12,6 +12,7 @@ Used libraries and modules:
     - formik -> form creation and management
     - yup -> form validation
     - messaging-api-telegram -> telegram messages dispatch
+    - react-transition-group -> elements animation
     - gh-pages -> project deploy on gitHub pages
 
 
@@ -27,10 +28,13 @@ Implemented functionality:
     -> pages switching
     -> active page detecting
     -> phone number input validation
-    -> phone number input tooltip
+    -> animated phone number input tooltip
     -> name and message fields input validation
+    -> errors messages animation
     -> send message to telegram
+    -> sending message indicator
     -> send message buttons disabling on data loading
+    -> animated modal window after the message has been sent
     -> send message errors handling
     -> switching to a dialog in viber, telegram, to calling a phone number
     -> icons color switching on hover

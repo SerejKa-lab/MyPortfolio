@@ -22,9 +22,9 @@ export default {
     'biography.work_yandex': `From 2010 to 2019 I worked as specialist in evaluating the quality 
         of search algorithms and providing data for machine learning (assessor) for Yandex LLC.`,
     'biography.personal_qualities.header': 'Personal qualities.',
-    'biography.personal_qualities': `Open and sociable, responsible and demanding in work. 
-        I like to set goals and achieve them. I appreciate responsibility, mutual respect, 
-        kindness and openness, optimism and sense of humor in people.`,
+    'biography.personal_qualities': `Open and sociable, responsible and attentive in work. 
+        I like to set goals and achieve them. In people I appreciate mutual respect, 
+        kindness and openness, optimism and sense of humor.`,
     'biography.interests': 'Interests',
     'biography.self_development': `I lead a healthy and active lifestyle. Attend courses, 
         trainings and seminars on professional development, self-development and personal growth. 
@@ -51,7 +51,7 @@ export default {
     'projects.button.watch': 'Watch',
 
     'contacts.header': 'Invite you to cooperate!',
-    'contacts.form.phone_number.hint': `Please enter the number in international format, 
+    'contacts.form.phone_number.hint': `Enter the number in the international format, 
         for example: 375 29 555 55 55. Or select your country and enter the internal phone number, 
         for example: "Belarus" 29 555 55 55`,
     'contacts.form.p_hold.name': 'Your name',
