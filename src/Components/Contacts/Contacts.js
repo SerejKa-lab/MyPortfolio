@@ -6,6 +6,7 @@ import ComponentHeader from '../ComponentHeader/ComponentHeader'
 import PhoneNumber from './PhoneNumber/PhoneNumber'
 import SendMessageFormik from './SendMessageFormik/SendMessageFormik'
 import ModalWindow from '../Common/ModalWindow/ModalWindow'
+import ErrorMsg from './ErrorMsg/ErrorMsg'
 
 
 const Contacts = ({ intl, locale }) => {
@@ -15,61 +16,66 @@ const Contacts = ({ intl, locale }) => {
    const phoneIsValid = phone && !phoneErr
    const [submitNum, setSubmitNum] = useState(0)
    const [showModal, setModal] = useState(false)
+   const [sendingProgress, setSendingProgress] = useState(false)
 
    const onSubmit = async (name, message) => {
-      if (phoneIsValid && name && message) {
-         try {
-            const tMessage = 
+      try {
+         if (phoneIsValid && name && message) {
+            setSendingProgress(true)
+
+            const tMessage =
                `ОТ: ${name}, ТЕЛЕФОН: ${phone}, СООБЩЕНИЕ: '${message}'`
 
             await telegramClient.sendMessage(chatId, tMessage, {
                disable_web_page_preview: true,
                disable_notification: true
             })
-            setPhone(null)
             setSubmitNum(0)
             setModal(true)
-            
-            await telegramClient.getWebhookInfo()
-         } catch (err) {
-            alert(err)
+
+            setSendingProgress(false)
+            setPhone(null)
+
+         } else {
+            setSubmitNum(submitNum + 1)
          }
-      } else {
-         setSubmitNum(submitNum + 1)
+      } catch (err) {
+         console.error(err)
       }
    }
 
    const componentTitle = intl.formatMessage({ id: 'contacts.header' })
    const phoneHoder = intl.formatMessage({ id: 'contacts.form.p_hold.phone' })
    const phoneErrMessage = intl.formatMessage({ id: 'contacts.form.p_hold.phone_error' })
-
+   const showPhoneError = (!phone || phoneErr) && submitNum !== 0 ? true : false
 
    return (
       <div className={styles.contacts} id='contacts'>
          <div className={styles.container}>
             <ComponentHeader title={componentTitle} />
             <div className={styles.messageBox}>
-               <PhoneNumber 
+               <PhoneNumber
                   placeholder={phoneHoder}
-                  setPhoneErr={setPhoneErr} 
-                  phone={phone} 
+                  setPhoneErr={setPhoneErr}
+                  phone={phone}
                   setPhone={setPhone}
                   locale={locale} />
-               {(!phone || phoneErr) && submitNum !==0
-                  && <div className={styles.errorField}>{phoneErrMessage}</div> }
+               <ErrorMsg message={phoneErrMessage} trigger={showPhoneError} />
 
-               <SendMessageFormik 
+               <SendMessageFormik
                   onSubmit={onSubmit}
                   phoneIsValid={phoneIsValid}
                   btnDisabled={showModal}
-                  submitNum={submitNum} />
+                  submitNum={submitNum}
+                  sendingProgress={sendingProgress} />
             </div>
-            { showModal 
-               && <ModalWindow 
-                     showModal={showModal}
-                     message={'Your message is sent!\nThank you!'}
-                     onClick={() => setModal(false)}
-                  /> 
+
+            {showModal
+               && <ModalWindow
+                  showModal={showModal}
+                  message={'Your message is sent! Thank you!'}
+                  onClick={() => setModal(false)}
+               />
             }
          </div>
       </div>

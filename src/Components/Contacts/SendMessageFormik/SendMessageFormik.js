@@ -4,13 +4,15 @@ import { withFormik, Form, Field } from 'formik'
 import * as yup from 'yup'
 import styles from './SendMessageFormik.module.css'
 import Button from '../../Common/Button/Button'
+import ErrorMsg from '../ErrorMsg/ErrorMsg'
+import Preloader from '../../Common/Preloader/Preloader'
 
 
 
 const SendMessageForm = (props) => {
     const { values, touched, errors, handleSubmit, isSubmitting } = props     // Formik props
     const { intl } = props      // react-intl props
-    const { onSubmit, phoneIsValid, btnDisabled, submitNum } = props     // Contacts component props
+    const { onSubmit, phoneIsValid, btnDisabled, submitNum, sendingProgress } = props     // Contacts component props
 
     const submitFunc = (e) => {
         const { name, message } = values
@@ -29,6 +31,9 @@ const SendMessageForm = (props) => {
     const phoneError = !phoneIsValid && submitNum > 0
     const disabled = isSubmitting || btnDisabled || errorsIsNotEmpty || phoneError
 
+    const showMessageErr = errors.message && touched.message ? true : false
+    const showNameErr = errors.name && touched.name ? true : false
+
     const nameHolder = intl.formatMessage({ id: 'contacts.form.p_hold.name' })
     const messageHolder = intl.formatMessage({ id: 'contacts.form.p_hold.message' })
     const buttonTitle = intl.formatMessage({ id: 'contacts.form.button' })
@@ -37,16 +42,18 @@ const SendMessageForm = (props) => {
         <Form className={styles.formikForm} onSubmit={submitFunc}>
             <div>
                 <Field type="text" name="name" placeholder={nameHolder} />
-                { errors.name && touched.name && <div className={styles.error}>{errors.name}</div>}
+                <ErrorMsg message={errors.name} trigger={showNameErr} />
             </div>
             <div>
                 <Field name='message' component='textarea'
-                     placeholder={messageHolder} cols='30' rows='5' />
-                {errors.message && touched.message 
-                    && <div className={styles.error}>{errors.message}</div>}
+                    placeholder={messageHolder} cols='30' rows='5' />
+                <ErrorMsg message={errors.message} trigger={showMessageErr} />
             </div>
-
-            <Button title={buttonTitle} type='submit' onClick={onClick} disabled={disabled} />
+            <div className={styles.buttonArea}>
+                <Button title={buttonTitle} type='submit' onClick={onClick} disabled={disabled} />
+                {sendingProgress 
+                    && <span className={styles.preloader}><Preloader width='33px' /></span>}
+            </div>
         </Form>
     )
 }

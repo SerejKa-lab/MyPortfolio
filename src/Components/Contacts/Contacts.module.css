@@ -36,13 +36,6 @@
   font-size: 16px;
 }
 
-
-.errorField {
-    color: magenta;
-    text-align: center;
-    margin-bottom: 8px;
-}
-
 @media ( max-width: 950px ){
     .messageBox {
         width: 455px;
