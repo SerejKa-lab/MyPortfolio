@@ -1,7 +1,7 @@
 import React from 'react'
 import { injectIntl, FormattedMessage } from 'react-intl'
 import styles from './Biography.module.css'
-import ComponentHeader from '../ComponentHeader/ComponentHeader'
+import ComponentHeader from '../Common/ComponentHeader/ComponentHeader'
 import photo from '../../Assets/Images/Photo/photo.jpg'
 
 const Biography = ({ intl }) => {

@@ -2,7 +2,7 @@ import React from "react"
 import { NavLink } from 'react-router-dom'
 import { FormattedMessage } from 'react-intl'
 import styles from "./Header.module.css"
-import Settings from "../Settings/Settings"
+import Settings from "./Settings/Settings"
 
 const Header = (props) => {
 

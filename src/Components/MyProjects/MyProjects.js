@@ -2,7 +2,7 @@ import React from 'react'
 import { injectIntl } from 'react-intl'
 import styles from './MyProjects.module.css'
 import Project from './Project/Project'
-import ComponentHeader from '../ComponentHeader/ComponentHeader'
+import ComponentHeader from '../Common/ComponentHeader/ComponentHeader'
 
 const MyProjects = ({ intl, projects }) => {
 

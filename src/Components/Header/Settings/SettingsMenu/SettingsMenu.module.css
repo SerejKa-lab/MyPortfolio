@@ -81,7 +81,7 @@
 
 .theme_darkRed span:hover::after,
 .theme_darkRed span.active::after {
-  background-color: rgb(247, 2, 168);
+  background-color: rgb(234, 23, 54);
 }
 
 .theme_green span:hover::after,
@@ -130,7 +130,7 @@
 }
 
 .darkRed {
-    background-color: rgb(200, 0, 139);
+    background-color: rgb(142, 2, 23);
 }
 
 .green {

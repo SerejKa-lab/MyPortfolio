@@ -2,7 +2,7 @@ import React from "react"
 import styles from "./Skills.module.css"
 import { injectIntl } from 'react-intl'
 import SkillSubject from "./SkillSubject/SkillSubject"
-import ComponentHeader from "../ComponentHeader/ComponentHeader"
+import ComponentHeader from "../Common/ComponentHeader/ComponentHeader"
 
 const Skills = ({ intl, skills }) => {
 

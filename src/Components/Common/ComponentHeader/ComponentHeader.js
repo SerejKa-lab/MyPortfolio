@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './ComponentHeader.module.css'
-import { ColorThemeContext } from '../../Utils/ReactContects/ColorThemeContext'
+import { ColorThemeContext } from '../../../Utils/ReactContects/ColorThemeContext'
 import { useContext } from 'react'
 
 const ComponentHeader = ({ title }) => {
