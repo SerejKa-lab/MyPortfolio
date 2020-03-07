@@ -69,18 +69,22 @@ class App extends React.Component {
                      setColorTheme={this.setColorTheme}
                      colorTheme={colorTheme}
                      locale={locale}
-                     setLocale = {this.setLocale} />
+                     setLocale={this.setLocale} />
                   <Greeting spaDisplayMode={spaDisplayMode} />
                   {spaDisplayMode
                      ? <div className={styles.displaySPA}>
                         <Switch>
                            <Redirect exact from='/' to='/biography' />
                            <Redirect exact from='/portfolio' to='/biography' />
-                           <Route exact path='/biography' component={Biography} />
-                           <Route exact path='/skills' render={() => <Skills skills={skills} />} />
-                           <Route exact path='/projects' render={() => <MyProjects projects={projects} />} />
-                           <Route exact path='/contacts' render={() => <Contacts locale={locale} />} />
-                           <Route exact component={Error404} />
+                           <Route exact path='/biography'
+                              render={() => <Biography spaDisplayMode={spaDisplayMode} />} />
+                           <Route exact path='/skills'
+                              render={() => <Skills skills={skills} spaDisplayMode={spaDisplayMode} />} />
+                           <Route exact path='/projects'
+                              render={() => <MyProjects projects={projects} spaDisplayMode={spaDisplayMode} />} />
+                           <Route exact path='/contacts'
+                              render={() => <Contacts locale={locale} spaDisplayMode={spaDisplayMode} />} />
+                           <Route exact render={() => <Error404 spaDisplayMode={spaDisplayMode} />} />
                         </Switch>
                      </div>
 
@@ -91,10 +95,10 @@ class App extends React.Component {
                         <Contacts locale={locale} />
                      </div>
                   }
-                  <Footer 
-                     spaDisplayMode={spaDisplayMode} 
-                     colorTheme={colorTheme} 
-                     locale={locale}/>
+                  <Footer
+                     spaDisplayMode={spaDisplayMode}
+                     colorTheme={colorTheme}
+                     locale={locale} />
                </div>
             </ColorThemeProvider>
          </IntlProvider>

@@ -1,10 +1,10 @@
 import React from 'react'
 import { FormattedMessage } from 'react-intl'
 import styles from './Footer.module.css'
-import VkIcon from '../SocialIcons/VkIcon'
-import TelegramIcon from '../SocialIcons/TelegramIcon'
-import ViberIcon from '../SocialIcons/ViberIcon'
-import PhoneIcon from '../SocialIcons/PhoneIcon'
+import VkIcon from './SocialIcons/VkIcon'
+import TelegramIcon from './SocialIcons/TelegramIcon'
+import ViberIcon from './SocialIcons/ViberIcon'
+import PhoneIcon from './SocialIcons/PhoneIcon'
 
 const Footer = ({spaDisplayMode, colorTheme, locale}) => {
    const footerClassName = spaDisplayMode ? `${styles.footer} ${styles.footerSPA}` : styles.footer

@@ -7,9 +7,10 @@ import PhoneNumber from './PhoneNumber/PhoneNumber'
 import SendMessageFormik from './SendMessageFormik/SendMessageFormik'
 import ModalWindow from '../Common/ModalWindow/ModalWindow'
 import ErrorMsg from './ErrorMsg/ErrorMsg'
+import SPATransition from '../Common/SPATransition/SPATransition'
 
 
-const Contacts = ({ intl, locale }) => {
+const Contacts = ({ intl, locale, spaDisplayMode }) => {
 
    const [phone, setPhone] = useState(null)
    const [phoneErr, setPhoneErr] = useState(false)
@@ -50,35 +51,37 @@ const Contacts = ({ intl, locale }) => {
    const showPhoneError = (!phone || phoneErr) && submitNum !== 0 ? true : false
 
    return (
-      <div className={styles.contacts} id='contacts'>
-         <div className={styles.container}>
-            <ComponentHeader title={componentTitle} />
-            <div className={styles.messageBox}>
-               <PhoneNumber
-                  placeholder={phoneHoder}
-                  setPhoneErr={setPhoneErr}
-                  phone={phone}
-                  setPhone={setPhone}
-                  locale={locale} />
-               <ErrorMsg message={phoneErrMessage} trigger={showPhoneError} />
-
-               <SendMessageFormik
-                  onSubmit={onSubmit}
-                  phoneIsValid={phoneIsValid}
-                  btnDisabled={showModal}
-                  submitNum={submitNum}
-                  sendingProgress={sendingProgress} />
+     <SPATransition trigger={spaDisplayMode}>
+         <div className={styles.contacts} id='contacts'>
+            <div className={styles.container}>
+               <ComponentHeader title={componentTitle} />
+               <div className={styles.messageBox}>
+                  <PhoneNumber
+                     placeholder={phoneHoder}
+                     setPhoneErr={setPhoneErr}
+                     phone={phone}
+                     setPhone={setPhone}
+                     locale={locale} />
+                  <ErrorMsg message={phoneErrMessage} trigger={showPhoneError} />
+   
+                  <SendMessageFormik
+                     onSubmit={onSubmit}
+                     phoneIsValid={phoneIsValid}
+                     btnDisabled={showModal}
+                     submitNum={submitNum}
+                     sendingProgress={sendingProgress} />
+               </div>
+   
+               {showModal
+                  && <ModalWindow
+                     showModal={showModal}
+                     message={'Your message is sent! Thank you!'}
+                     onClick={() => setModal(false)}
+                  />
+               }
             </div>
-
-            {showModal
-               && <ModalWindow
-                  showModal={showModal}
-                  message={'Your message is sent! Thank you!'}
-                  onClick={() => setModal(false)}
-               />
-            }
          </div>
-      </div>
+     </SPATransition>
    )
 }
 

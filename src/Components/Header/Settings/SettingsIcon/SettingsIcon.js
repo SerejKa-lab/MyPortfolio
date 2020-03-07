@@ -1,12 +1,11 @@
-import React from 'react';
+import React from 'react'
 import styles from './SettingsIcon.module.css'
+import classNames from 'classnames'
 
 
 const SettingsIcon = ({ showMenu, colorTheme, ...styleArgs }) => {
     
     const style = { width: '22px', height: '22px', ...styleArgs }
-
-    const classNames = require('classnames');
 
     const iconStyle = classNames({
         [styles.iconActive]: showMenu,
@@ -32,4 +31,4 @@ const SettingsIcon = ({ showMenu, colorTheme, ...styleArgs }) => {
     )
 }
 
-export default SettingsIcon;
+export default SettingsIcon

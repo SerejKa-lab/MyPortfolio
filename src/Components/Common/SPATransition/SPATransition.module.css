@@ -1,0 +1,12 @@
+.entering {
+    animation: modalAnime .5s ease-in-out;
+}
+
+@keyframes modalAnime {
+    from {
+        opacity: .9;
+    }
+    to {
+        opacity: 1;
+    }
+}
