@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c80edb4c289f1a19e4fa801dbcbf6982",
+    "revision": "ce1e8a34ac73f5014c53b64304c33763",
     "url": "/MyPortfolio/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyPortfolio/static/css/2.648ed26d.chunk.css"
   },
   {
-    "revision": "ee152e38c3f3352d67b5",
+    "revision": "2634456c9ac59f5bef19",
     "url": "/MyPortfolio/static/css/main.7f9d5a49.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyPortfolio/static/js/2.f290a8b0.chunk.js"
   },
   {
-    "revision": "ee152e38c3f3352d67b5",
-    "url": "/MyPortfolio/static/js/main.6f68bfde.chunk.js"
+    "revision": "2634456c9ac59f5bef19",
+    "url": "/MyPortfolio/static/js/main.40acf226.chunk.js"
   },
   {
     "revision": "500045f1b39a112f87a5",
@@ -68,8 +68,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyPortfolio/static/media/neuro-violet.a498c281.png"
   },
   {
-    "revision": "fa154f8a8c120131d9eb6022a23f1242",
-    "url": "/MyPortfolio/static/media/photo.fa154f8a.jpg"
+    "revision": "0112d9d47dc91ff1f7fbe3532901041e",
+    "url": "/MyPortfolio/static/media/photo.0112d9d4.jpg"
   },
   {
     "revision": "d3021407034ac659827ef3f1ad2603e7",
