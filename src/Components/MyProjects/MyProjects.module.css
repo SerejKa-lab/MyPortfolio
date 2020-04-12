@@ -19,6 +19,24 @@
     flex-wrap: wrap;
 }
 
+.loginMessage {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.loginMessage a {
+    color: white;
+}
+
+.testAccount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: white;
+}
 
 @media (min-width: 568px) {
     .projectsContainer {

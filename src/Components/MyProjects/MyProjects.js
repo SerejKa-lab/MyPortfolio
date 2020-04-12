@@ -1,5 +1,5 @@
 import React from 'react'
-import { injectIntl } from 'react-intl'
+import { injectIntl, FormattedMessage } from 'react-intl'
 import styles from './MyProjects.module.css'
 import Project from './Project/Project'
 import ComponentHeader from '../Common/ComponentHeader/ComponentHeader'
@@ -15,6 +15,19 @@ const MyProjects = ({ intl, projects, spaDisplayMode }) => {
          <div id='projects' className={styles.myProjects}>
             <div className = {styles.container} >
                <ComponentHeader title={ intl.formatMessage({ id: 'projects.header' }) } />
+               <div className={styles.loginMessage}>
+                  <FormattedMessage id='projects.loginMessage.start' />
+                  <a className={styles.samuraiLink} 
+                     href='https://social-network.samuraijs.com/' 
+                     target='_blank' rel='noopener noreferrer'>
+                     https://social-network.samuraijs.com/
+                  </a>
+                  <FormattedMessage id='projects.loginMessage.end' />
+                  <div className={styles.testAccount}>
+                     <span>email: free@samuraijs.com</span>
+                     <span>password: free</span>
+                  </div>
+               </div>
                <div className={styles.projectsContainer}>
                   {projectsArr}
                </div>

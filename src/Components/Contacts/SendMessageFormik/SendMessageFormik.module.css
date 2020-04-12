@@ -1,3 +1,8 @@
+.formikForm textarea:focus, 
+.formikForm input:focus {
+    outline: none;
+}
+
 .formikForm {
     text-align: center;
 }
@@ -7,13 +12,17 @@
     font-size: 16px;
     width: 100%;
     height: 1.5em;
+    padding: 2px 5px;
     box-sizing: border-box;
 }
 
 .formikForm textarea {
     font-size: 16px;
+    padding: 5px;
+    height: 6em;
     width: 100%;
     box-sizing: border-box;
+    resize: none;
 }
 
 .buttonArea {

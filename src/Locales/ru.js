@@ -39,6 +39,9 @@ export default {
     'skills.git.description': 'Версионный контроль Git',
 
     'projects.header': 'Мои работы',
+    'projects.loginMessage.start': `Для получения тестового доступа к функциональности проектов, 
+        пожалуйста, залогиньтесь в социальной сети или на странице `,
+    'projects.loginMessage.end': ' под тестовым аккаунтом:', 
     'projects.portfolio.description': `Внедрённые библиотеки: React, react-router-dom,
         react-intl, classnames, messaging-api-telegram, react-phone-number-input, 
         formik, yup, gh-pages`,

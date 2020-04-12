@@ -36,7 +36,7 @@
 .name {
   margin: 0 15px;
   text-align: center;
-  width: 200px;
+  max-width: 200px;
 }
 
 .copyright {
@@ -45,7 +45,7 @@
   max-width: 200px;
 }
 
-@media ( max-width: 790px) {
+@media ( max-width: 627px) {
   .linksBox {
     margin: 0;
   }
@@ -62,7 +62,7 @@
   }
 }
 
-@media ( max-width: 479px) {
+@media ( max-width: 354px) {
   .copyright.enLang,
   .name.enLang {
     display: none;

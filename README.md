@@ -39,3 +39,4 @@ Implemented functionality:
     -> switching to a dialog in viber, telegram, to calling a phone number
     -> icons color switching on hover
     -> switching to projects, project gitHub repositories
+    -> save/get global state to/from localStorage
