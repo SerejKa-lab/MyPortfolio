@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5864d3d5c0b5ef6a634e0ae9aba5850c",
+    "revision": "7886609d573aaaf2b3f8ad4521ecd72f",
     "url": "/MyPortfolio/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyPortfolio/static/css/2.648ed26d.chunk.css"
   },
   {
-    "revision": "0b894722ed38189e306e",
-    "url": "/MyPortfolio/static/css/main.baf2cc23.chunk.css"
+    "revision": "b1bc49527a9b820f0d05",
+    "url": "/MyPortfolio/static/css/main.dae9bc39.chunk.css"
   },
   {
     "revision": "38fa4710d65e8c18f8ce",
     "url": "/MyPortfolio/static/js/2.c4357039.chunk.js"
   },
   {
-    "revision": "0b894722ed38189e306e",
+    "revision": "b1bc49527a9b820f0d05",
     "url": "/MyPortfolio/static/js/main.7860df80.chunk.js"
   },
   {
@@ -49,23 +49,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "163c03113e7f8ece220c50bce7b81398",
-    "url": "/MyPortfolio/static/media/neuro-blue.163c0311.jpg"
+    "url": "/MyPortfolio/static/media/neuro-blue.163c0311.png"
   },
   {
     "revision": "899d82f517398afcf2b9cab2415b0a8b",
-    "url": "/MyPortfolio/static/media/neuro-darkRed.899d82f5.jpg"
+    "url": "/MyPortfolio/static/media/neuro-darkRed.899d82f5.png"
   },
   {
-    "revision": "a594a76f4e08aa753cee3268915adf24",
-    "url": "/MyPortfolio/static/media/neuro-green.a594a76f.png"
+    "revision": "537a8e40a2ea12f8979bd2f4eaf2b571",
+    "url": "/MyPortfolio/static/media/neuro-green.537a8e40.png"
   },
   {
-    "revision": "eb3be5772b93fdaeba62a053c7f7eb9c",
-    "url": "/MyPortfolio/static/media/neuro-maroon.eb3be577.png"
+    "revision": "3e13456aa7c56d82a5d6eb2c224ff9c3",
+    "url": "/MyPortfolio/static/media/neuro-maroon.3e13456a.png"
   },
   {
-    "revision": "a498c281cc4e20fa58630b8506f88927",
-    "url": "/MyPortfolio/static/media/neuro-violet.a498c281.png"
+    "revision": "c01c10388bb4aef3be6ca9f3d8c112f3",
+    "url": "/MyPortfolio/static/media/neuro-violet.c01c1038.png"
   },
   {
     "revision": "0112d9d47dc91ff1f7fbe3532901041e",
