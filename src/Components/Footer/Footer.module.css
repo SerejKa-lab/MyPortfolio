@@ -1,11 +1,12 @@
 .footer {
+  padding: 2px 0;
   bottom: 0;
-  background-color: rgb(55, 51, 60);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
   font-family: "Montserrat", sans-serif;
+  color: white;
+  background-color: rgb(55, 51, 60);
 }
 
 .footerSPA {

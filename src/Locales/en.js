@@ -42,7 +42,7 @@ export default {
     'projects.header': 'My projects',
     'projects.loginMessage.start': `To get test access to project functionality, 
         please, log in to a social network or on the page `,
-    'projects.loginMessage.end': ' under the test account:', 
+    'projects.loginMessage.end': '. Use this test account:', 
     'projects.portfolio.description': `Applied libraries: React, react-router-dom,
         react-intl, classnames, messaging-api-telegram, react-phone-number-input, 
         formik, yup, gh-pages`,
