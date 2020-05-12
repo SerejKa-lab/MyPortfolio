@@ -52,7 +52,7 @@ export default {
     'projects.github.title': 'Гитхаб репозиторий',
     'projects.button.watch': 'Смотреть',
 
-    'contacts.header': 'Приглашаю к сотрудничеству!',
+    'contacts.header': 'Свяжитесь со мной!',
     'contacts.form.phone_number.hint': `Введите номер в международном формате, например: 375 29 555 55 55. 
         Или выберите свою страну и введите внутренний номер, например: "Беларусь" 29 555 55 55`,
     'contacts.form.p_hold.name': 'Ваше имя',

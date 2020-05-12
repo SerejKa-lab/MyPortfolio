@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { injectIntl } from 'react-intl'
+import { injectIntl, FormattedMessage } from 'react-intl'
 import { telegramClient, chatId } from '../../Utils/TelegramClient/TelegramClient'
 import styles from './Contacts.module.css'
 import ComponentHeader from '../Common/ComponentHeader/ComponentHeader'
@@ -45,7 +45,7 @@ const Contacts = ({ intl, locale, spaDisplayMode }) => {
       }
    }
 
-   const componentTitle = intl.formatMessage({ id: 'contacts.header' })
+   const componentTitle = <FormattedMessage id='contacts.header' />
    const phoneHoder = intl.formatMessage({ id: 'contacts.form.p_hold.phone' })
    const phoneErrMessage = intl.formatMessage({ id: 'contacts.form.p_hold.phone_error' })
    const showPhoneError = (!phone || phoneErr) && submitNum !== 0 ? true : false

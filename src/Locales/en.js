@@ -53,7 +53,7 @@ export default {
     'projects.github.title': 'Github repository',
     'projects.button.watch': 'Watch',
 
-    'contacts.header': 'Invite you to cooperate!',
+    'contacts.header': 'Contact me!',
     'contacts.form.phone_number.hint': `Enter the number in the international format, 
         for example: 375 29 555 55 55. Or select your country and enter the internal phone number, 
         for example: "Belarus" 29 555 55 55`,
