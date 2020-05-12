@@ -5,10 +5,10 @@
 
 .formikForm {
     text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 .formikForm input {
-    font-family: Arial, sans-serif;
     margin-bottom: 5px;
     font-size: 16px;
     width: 100%;
