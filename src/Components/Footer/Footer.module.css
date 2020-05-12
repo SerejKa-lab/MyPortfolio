@@ -2,7 +2,7 @@
   padding: 2px 0;
   bottom: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -24,8 +24,9 @@
 
 .linksBox {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 30px;
+  width: 33%;
 }
 
 .linksBox a {
@@ -37,12 +38,14 @@
 .name {
   margin: 0 15px;
   text-align: center;
+  width: 33%;
   max-width: 200px;
 }
 
 .copyright {
   text-align: center;
   margin: 0 15px;
+  width: 33%;
   max-width: 200px;
 }
 
