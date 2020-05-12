@@ -3,7 +3,7 @@ import styles from './SettingsIcon.module.css'
 import classNames from 'classnames'
 
 
-const SettingsIcon = ({ showMenu, colorTheme, ...styleArgs }) => {
+const SettingsIcon = ({ showMenu, colorTheme, toggleMenuDisp, ...styleArgs }) => {
     
     const style = { width: '22px', height: '22px', ...styleArgs }
 
@@ -12,9 +12,16 @@ const SettingsIcon = ({ showMenu, colorTheme, ...styleArgs }) => {
         [styles[`theme_${colorTheme}`]]: !showMenu
     })
 
+    const toggleMenuClick = () => toggleMenuDisp()
+    const toggleMenuKey = (e) => {
+        if (e.charCode === 32) toggleMenuDisp()
+        // e.stopPropagation()
+    }
+
     return(
-        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            viewBox="0 0 512 512" style={style} className={styles.icon} >
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512" 
+            style={style} className={styles.icon} tabIndex='0' 
+            onClick={toggleMenuClick} onKeyPress={toggleMenuKey} >
     	    <g className={iconStyle}>
                 <path d="M500.6,212.6l-59.9-14.7c-3.3-10.5-7.5-20.7-12.6-30.6l30.6-51c3.6-6,2.7-13.5-2.1-18.3L414,55.4
                         c-4.8-4.8-12.3-5.7-18.3-2.1l-51,30.6c-9.9-5.1-20.1-9.3-30.6-12.6l-14.4-59.9C297.9,4.8,291.9,0,285,0h-60

@@ -18,7 +18,3 @@
     cursor: not-allowed;
     background-color: buttonface;
 }
-
-.button:focus {
-    outline: none;
-}

@@ -24,8 +24,9 @@ class Settings extends React.Component {
 
         return (
             <div className={styles.settings}>
-                <div className={styles.iconWrapper} onClick={this.toggleMenuDisp}>
-                    <SettingsIcon showMenu={showMenu} colorTheme={colorTheme} />
+                <div className={styles.iconWrapper}>
+                    <SettingsIcon showMenu={showMenu} 
+                        colorTheme={colorTheme} toggleMenuDisp={this.toggleMenuDisp} />
                 </div>
                 { showMenu && <SettingsMenu {...this.props} /> }
             </div>

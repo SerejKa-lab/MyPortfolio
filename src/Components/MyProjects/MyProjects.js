@@ -17,7 +17,7 @@ const MyProjects = ({ intl, projects, spaDisplayMode }) => {
                <ComponentHeader title={ intl.formatMessage({ id: 'projects.header' }) } />
                <div className={styles.loginMessage}>
                   <FormattedMessage id='projects.loginMessage.start' />
-                  <a className={styles.samuraiLink} 
+                  <a className={styles.samuraiLink} tabIndex='-1'
                      href='https://social-network.samuraijs.com/' 
                      target='_blank' rel='noopener noreferrer'>
                      https://social-network.samuraijs.com/

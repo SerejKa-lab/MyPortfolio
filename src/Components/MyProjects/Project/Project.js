@@ -15,7 +15,7 @@ const Project = ({ intl, title, GHLink, projectLink }) => {
    return (
       <div className={styles.project}>
          <div className={projectReviewStyle}>
-            <a href={projectLink} target='_blank' rel='noopener noreferrer'>
+            <a href={projectLink} target='_blank' rel='noopener noreferrer' tabIndex='-1'>
                <Button title={intl.formatMessage({ id: 'projects.button.watch' })} />
             </a>
          </div>

@@ -8,6 +8,7 @@
 }
 
 .formikForm input {
+    font-family: Arial, sans-serif;
     margin-bottom: 5px;
     font-size: 16px;
     width: 100%;
@@ -17,7 +18,7 @@
 }
 
 .formikForm textarea {
-    font-size: 16px;
+    font-size: 18px;
     padding: 5px;
     height: 6em;
     width: 100%;

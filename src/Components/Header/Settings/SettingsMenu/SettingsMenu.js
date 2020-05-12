@@ -6,19 +6,32 @@ import { Link } from 'react-router-dom'
 
 const SettingsMenu = (props) => {
 
-    const { spaDisplayMode, setSpaDisplayMode, colorTheme, setColorTheme, 
-            locale, setLocale } = props
+    const { spaDisplayMode, setSpaDisplayMode, colorTheme, setColorTheme,
+        locale, setLocale } = props
 
     const setHtmlMode = () => setSpaDisplayMode(false)
     const setSpaMode = () => setSpaDisplayMode(true)
     const setRuLocale = () => setLocale('ru')
+    const setRuLocaleKey = (e) => {
+        if (e.charCode === 13) setLocale('ru')
+    }
     const setEnLocale = () => setLocale('en')
+    const setEnLocaleKey = (e) => {
+        if (e.charCode === 13) setLocale('en')
+    }
+
+    const setColorOnClick = (color) => setColorTheme(color)
+        const setColorOnKey = (e, color) => {
+            if (e.charCode === 13) setColorTheme(color)
+        }
 
     const colors = ['blue', 'darkRed', 'green', 'maroon', 'violet']
-    const colorButtons = colors.map((color) => {
+
+    const renderColorButtons = () => colors.map((color) => {
         return (
             <div className={styles.colorButton + ' ' + styles[color]}
-                onClick={() => setColorTheme(color)} key={color} />
+                onClick={() => setColorOnClick(color)} key={color}
+                tabIndex='0' onKeyPress={(e) => setColorOnKey(e, color)} />
         )
     })
 
@@ -32,10 +45,12 @@ const SettingsMenu = (props) => {
         <div className={styles.settingsMenu}>
             <div className={buttonsBlockStyle}>
                 <div className={styles.langSelect + ' ' + styles.theme_blue}>
-                    <span className={ruStyle} onClick={setRuLocale}>
+                    <span className={ruStyle} onClick={setRuLocale}
+                        onKeyPress={setRuLocaleKey} tabIndex='0'>
                         <FormattedMessage id='settings.settingsMenu.lang_icon.ru' />
                     </span>
-                    <span className={enStyle} onClick={setEnLocale}>
+                    <span className={enStyle} onClick={setEnLocale}
+                        onKeyPress={setEnLocaleKey} tabIndex='0'>
                         <FormattedMessage id='settings.settingsMenu.lang_icon.en' />
                     </span>
                 </div>
@@ -45,7 +60,7 @@ const SettingsMenu = (props) => {
                 </div>
             </div>
             <div className={styles.colorTheme}>
-                {colorButtons}
+                {renderColorButtons()}
             </div>
         </div>
     )

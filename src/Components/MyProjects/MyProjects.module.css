@@ -28,6 +28,7 @@
 
 .loginMessage a {
     color: white;
+    outline: none;
 }
 
 .testAccount {
