@@ -13,21 +13,26 @@
 }
 
 .theme_blue {
-    background-image: url(./Assets/Images/ColorThemes/neuro-blue.jpg);
+    background-color: rgb(22, 64, 142);
+    background-image: url(./Assets/Images/ColorThemes/neuro-blue.png);
 }
 
 .theme_darkRed {
-    background-image: url(./Assets/Images/ColorThemes/neuro-darkRed.jpg);
+    background-color: rgb(42, 17, 35);
+    background-image: url(./Assets/Images/ColorThemes/neuro-darkRed.png);
 }
 
 .theme_green {
+    background-color: rgb(46, 177, 122);
     background-image: url(./Assets/Images/ColorThemes/neuro-green.png);
 }
 
 .theme_maroon {
+    background-color: rgb(114, 56, 110);
     background-image: url(./Assets/Images/ColorThemes/neuro-maroon.png);
 }
 
 .theme_violet {
+    background-color: rgb(33, 0, 82);
     background-image: url(./Assets/Images/ColorThemes/neuro-violet.png);
 }
