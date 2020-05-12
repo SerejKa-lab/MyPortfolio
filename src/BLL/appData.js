@@ -33,10 +33,10 @@ import git from '../Assets/Images/Skills/git.png'
  ]
 
  export const projects = [
-    { title: 'tasksManager', GHLink: 'https://github.com/SerejKa-lab/TasksManager', 
-       projectLink: 'https://serejka-lab.github.io/TasksManager' },
-    { title: 'netWork', GHLink: 'https://github.com/SerejKa-lab/NetWork', 
-       projectLink: 'https://serejka-lab.github.io/NetWork' },
-    { title: 'portfolio', GHLink: 'https://github.com/SerejKa-lab/MyPortfolio', 
-       projectLink: 'https://serejka-lab.github.io/MyPortfolio' },
+    { title: 'tasksManager', GHLink: 'https://github.com/s-kashko/TasksManager', 
+       projectLink: 'https://s-kashko.github.io/TasksManager' },
+    { title: 'netWork', GHLink: 'https://github.com/s-kashko/NetWork', 
+       projectLink: 'https://s-kashko.github.io/NetWork' },
+    { title: 'portfolio', GHLink: 'https://github.com/s-kashko/MyPortfolio', 
+       projectLink: 'https://s-kashko.github.io/MyPortfolio' },
  ]
