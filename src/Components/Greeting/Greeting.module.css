@@ -5,6 +5,7 @@
 }
 
 .container {
+  box-sizing: border-box;
   width: 80%;
   display: flex;
   justify-content: flex-start;
