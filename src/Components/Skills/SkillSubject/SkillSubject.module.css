@@ -31,8 +31,9 @@
 }
 
 
-@media ( max-width: 829px) {
+@media ( max-width: 861px) {
   .mySkill {
+    flex-grow: 0;
     margin: 10px 0;
     width: 60%
   }
