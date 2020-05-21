@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "29b4fc7fc6eff2319c3fa63fbf031c4d",
+    "revision": "578446c5a52ffd840ef5c2fb6a55e169",
     "url": "/MyPortfolio/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyPortfolio/static/css/2.648ed26d.chunk.css"
   },
   {
-    "revision": "220ff6cda90664c6af8c",
+    "revision": "acceb3d7398f5757d98d",
     "url": "/MyPortfolio/static/css/main.8091dd27.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyPortfolio/static/js/2.03dfef1e.chunk.js"
   },
   {
-    "revision": "220ff6cda90664c6af8c",
-    "url": "/MyPortfolio/static/js/main.5661e096.chunk.js"
+    "revision": "acceb3d7398f5757d98d",
+    "url": "/MyPortfolio/static/js/main.72fe68c4.chunk.js"
   },
   {
     "revision": "500045f1b39a112f87a5",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyPortfolio/static/media/TasksManager.4aeb863e.png"
   },
   {
-    "revision": "e8c53b2e3eec3488cfa11b5e3f05a9fc",
-    "url": "/MyPortfolio/static/media/css.e8c53b2e.png"
+    "revision": "8c7dad2a165e25c9ed9a478853f60783",
+    "url": "/MyPortfolio/static/media/css.8c7dad2a.png"
   },
   {
     "revision": "bd0705a836ab73c3c58db414fb315503",
@@ -48,12 +48,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyPortfolio/static/media/gulp.9751273e.png"
   },
   {
-    "revision": "c7411f8fc3225062de7fe42bddd1da84",
-    "url": "/MyPortfolio/static/media/html.c7411f8f.png"
+    "revision": "ea66dcac246725061521c405d23ba23d",
+    "url": "/MyPortfolio/static/media/html.ea66dcac.png"
   },
   {
-    "revision": "36700bee9a1831f2691165d291d62d78",
-    "url": "/MyPortfolio/static/media/js.36700bee.png"
+    "revision": "77fbd761d9b0f60390f6756e273e1721",
+    "url": "/MyPortfolio/static/media/js.77fbd761.png"
   },
   {
     "revision": "163c03113e7f8ece220c50bce7b81398",

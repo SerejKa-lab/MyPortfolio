@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/MyPortfolio/static/css/main.8091dd27.chunk.css",
-    "main.js": "/MyPortfolio/static/js/main.5661e096.chunk.js",
-    "main.js.map": "/MyPortfolio/static/js/main.5661e096.chunk.js.map",
+    "main.js": "/MyPortfolio/static/js/main.72fe68c4.chunk.js",
+    "main.js.map": "/MyPortfolio/static/js/main.72fe68c4.chunk.js.map",
     "runtime-main.js": "/MyPortfolio/static/js/runtime-main.89b6ef0e.js",
     "runtime-main.js.map": "/MyPortfolio/static/js/runtime-main.89b6ef0e.js.map",
     "static/css/2.648ed26d.chunk.css": "/MyPortfolio/static/css/2.648ed26d.chunk.css",
     "static/js/2.03dfef1e.chunk.js": "/MyPortfolio/static/js/2.03dfef1e.chunk.js",
     "static/js/2.03dfef1e.chunk.js.map": "/MyPortfolio/static/js/2.03dfef1e.chunk.js.map",
     "index.html": "/MyPortfolio/index.html",
-    "precache-manifest.25956bf607ecc0fae67336aadcef6855.js": "/MyPortfolio/precache-manifest.25956bf607ecc0fae67336aadcef6855.js",
+    "precache-manifest.5835d78be5e269c1e8cb0ea0fdd2ce52.js": "/MyPortfolio/precache-manifest.5835d78be5e269c1e8cb0ea0fdd2ce52.js",
     "service-worker.js": "/MyPortfolio/service-worker.js",
     "static/css/2.648ed26d.chunk.css.map": "/MyPortfolio/static/css/2.648ed26d.chunk.css.map",
     "static/css/main.8091dd27.chunk.css.map": "/MyPortfolio/static/css/main.8091dd27.chunk.css.map",
     "static/media/Project.module.css": "/MyPortfolio/static/media/TasksManager.4aeb863e.png",
-    "static/media/css.png": "/MyPortfolio/static/media/css.e8c53b2e.png",
+    "static/media/css.png": "/MyPortfolio/static/media/css.8c7dad2a.png",
     "static/media/git.png": "/MyPortfolio/static/media/git.bd0705a8.png",
     "static/media/gulp.png": "/MyPortfolio/static/media/gulp.9751273e.png",
-    "static/media/html.png": "/MyPortfolio/static/media/html.c7411f8f.png",
-    "static/media/js.png": "/MyPortfolio/static/media/js.36700bee.png",
+    "static/media/html.png": "/MyPortfolio/static/media/html.ea66dcac.png",
+    "static/media/js.png": "/MyPortfolio/static/media/js.77fbd761.png",
     "static/media/App.module.css": "/MyPortfolio/static/media/neuro-violet.c01c1038.png",
     "static/media/photo.jpg": "/MyPortfolio/static/media/photo.0112d9d4.jpg",
     "static/media/react.png": "/MyPortfolio/static/media/react.d3021407.png",
@@ -30,6 +30,6 @@
     "static/css/2.648ed26d.chunk.css",
     "static/js/2.03dfef1e.chunk.js",
     "static/css/main.8091dd27.chunk.css",
-    "static/js/main.5661e096.chunk.js"
+    "static/js/main.72fe68c4.chunk.js"
   ]
 }
