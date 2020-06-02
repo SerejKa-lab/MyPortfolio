@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/MyPortfolio/static/css/main.27bdf341.chunk.css",
-    "main.js": "/MyPortfolio/static/js/main.ee97ee34.chunk.js",
-    "main.js.map": "/MyPortfolio/static/js/main.ee97ee34.chunk.js.map",
+    "main.js": "/MyPortfolio/static/js/main.0fbc00a4.chunk.js",
+    "main.js.map": "/MyPortfolio/static/js/main.0fbc00a4.chunk.js.map",
     "runtime-main.js": "/MyPortfolio/static/js/runtime-main.89b6ef0e.js",
     "runtime-main.js.map": "/MyPortfolio/static/js/runtime-main.89b6ef0e.js.map",
     "static/css/2.648ed26d.chunk.css": "/MyPortfolio/static/css/2.648ed26d.chunk.css",
     "static/js/2.11d42f8e.chunk.js": "/MyPortfolio/static/js/2.11d42f8e.chunk.js",
     "static/js/2.11d42f8e.chunk.js.map": "/MyPortfolio/static/js/2.11d42f8e.chunk.js.map",
     "index.html": "/MyPortfolio/index.html",
-    "precache-manifest.521fc2ad5910bb0eb2695218aaa21f74.js": "/MyPortfolio/precache-manifest.521fc2ad5910bb0eb2695218aaa21f74.js",
+    "precache-manifest.d6f459c971a88370b108117c83fd6e08.js": "/MyPortfolio/precache-manifest.d6f459c971a88370b108117c83fd6e08.js",
     "service-worker.js": "/MyPortfolio/service-worker.js",
     "static/css/2.648ed26d.chunk.css.map": "/MyPortfolio/static/css/2.648ed26d.chunk.css.map",
     "static/css/main.27bdf341.chunk.css.map": "/MyPortfolio/static/css/main.27bdf341.chunk.css.map",
     "static/media/Project.module.css": "/MyPortfolio/static/media/TasksManager.581bf400.webp",
-    "static/media/css.png": "/MyPortfolio/static/media/css.b68e56fb.png",
+    "static/media/css.png": "/MyPortfolio/static/media/css.41a55bac.png",
     "static/media/CommonError.module.css": "/MyPortfolio/static/media/error.669ab4de.png",
     "static/media/git.png": "/MyPortfolio/static/media/git.723d228f.png",
-    "static/media/html.png": "/MyPortfolio/static/media/html.43791849.png",
+    "static/media/html.png": "/MyPortfolio/static/media/html.8e2d2ad2.png",
     "static/media/js.png": "/MyPortfolio/static/media/js.43519737.png",
     "static/media/App.module.css": "/MyPortfolio/static/media/neuro-violet.cef8b362.webp",
     "static/media/photo.webp": "/MyPortfolio/static/media/photo.066944fb.webp",
@@ -30,6 +30,6 @@
     "static/css/2.648ed26d.chunk.css",
     "static/js/2.11d42f8e.chunk.js",
     "static/css/main.27bdf341.chunk.css",
-    "static/js/main.ee97ee34.chunk.js"
+    "static/js/main.0fbc00a4.chunk.js"
   ]
 }
