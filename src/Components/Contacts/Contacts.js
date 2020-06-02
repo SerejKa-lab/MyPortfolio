@@ -10,7 +10,7 @@ import ErrorMsg from './ErrorMsg/ErrorMsg'
 import SPATransition from '../Common/SPATransition/SPATransition'
 
 
-const Contacts = ({ intl, locale, spaDisplayMode }) => {
+const Contacts = ({ intl, locale, spaDisplayMode, setError }) => {
 
    const [phone, setPhone] = useState(null)
    const [phoneErr, setPhoneErr] = useState(false)
@@ -31,17 +31,22 @@ const Contacts = ({ intl, locale, spaDisplayMode }) => {
                disable_web_page_preview: true,
                disable_notification: true
             })
+            
             setSubmitNum(0)
             setModal(true)
-
-            setSendingProgress(false)
             setPhone(null)
+
+            return {messageIsSent: true}
 
          } else {
             setSubmitNum(submitNum + 1)
+            return {messageIsSent: false}
          }
       } catch (err) {
-         console.error(err)
+         setError(err.message)
+         return {messageIsSent: false}
+      } finally {
+         setSendingProgress(false)
       }
    }
 
@@ -67,7 +72,7 @@ const Contacts = ({ intl, locale, spaDisplayMode }) => {
                   <SendMessageFormik
                      onSubmit={onSubmit}
                      phoneIsValid={phoneIsValid}
-                     btnDisabled={showModal}
+                     btnDisabled={showModal || sendingProgress}
                      submitNum={submitNum}
                      sendingProgress={sendingProgress} />
                </div>

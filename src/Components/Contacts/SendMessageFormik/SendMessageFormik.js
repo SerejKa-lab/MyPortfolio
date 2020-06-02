@@ -14,13 +14,13 @@ const SendMessageForm = (props) => {
     const { intl } = props      // react-intl props
     const { onSubmit, phoneIsValid, btnDisabled, submitNum, sendingProgress } = props     // Contacts component props
 
-    const submitFunc = (e) => {
+    const submitFunc = async(e) => {
         const { name, message } = values
         e.preventDefault()
         if (!(isSubmitting || btnDisabled)) {   // if isSubmitting or btnDisabled do nothing
             if (phoneIsValid) {
-                onSubmit(name, message)
-                handleSubmit()
+                const response = await onSubmit(name, message)
+                if (response.messageIsSent) handleSubmit()
             } else onSubmit()
         }
     }
@@ -50,7 +50,7 @@ const SendMessageForm = (props) => {
                 <ErrorMsg message={errors.message} trigger={showMessageErr} />
             </div>
             <div className={styles.buttonArea}>
-                <Button title={buttonTitle} type='submit' onClick={onClick} disabled={disabled} />
+                <Button title={buttonTitle} type='button' onClick={onClick} disabled={disabled} />
                 {sendingProgress 
                     && <span className={styles.preloader}><Preloader width='33px' /></span>}
             </div>
