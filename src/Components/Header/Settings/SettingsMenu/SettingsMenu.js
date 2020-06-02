@@ -6,9 +6,12 @@ import { Link } from 'react-router-dom'
 
 const SettingsMenu = (props) => {
 
-    const { spaDisplayMode, setSpaDisplayMode, colorTheme, setColorTheme,
+    const { setMenuDisp, spaDisplayMode, setSpaDisplayMode, colorTheme, setColorTheme,
         locale, setLocale } = props
 
+    const hideMenu = (e) => {
+        if (e.keyCode === 27) setMenuDisp(false)
+    }
     const setHtmlMode = () => setSpaDisplayMode(false)
     const setSpaMode = () => setSpaDisplayMode(true)
     const setRuLocale = () => setLocale('ru')
@@ -42,7 +45,7 @@ const SettingsMenu = (props) => {
     const buttonsBlockStyle = `${styles.buttonsBlock} ${styles[`theme_${colorTheme}`]}`
 
     return (
-        <div className={styles.settingsMenu}>
+        <div className={styles.settingsMenu} onKeyDown={hideMenu}>
             <div className={buttonsBlockStyle}>
                 <div className={styles.langSelect + ' ' + styles.theme_blue}>
                     <span className={ruStyle} onClick={setRuLocale}

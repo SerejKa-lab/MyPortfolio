@@ -14,9 +14,9 @@ class Settings extends React.Component {
     }
 
     setMenuDisp = (value) => this.setState({ showMenu: value })
-    handleClickOutside = () => this.setMenuDisp(false)
     toggleMenuDisp = () => this.setMenuDisp(!this.state.showMenu)
-
+    handleClickOutside = () => this.setMenuDisp(false)
+    
     render() {
 
         const { showMenu } = this.state
@@ -25,10 +25,13 @@ class Settings extends React.Component {
         return (
             <div className={styles.settings}>
                 <div className={styles.iconWrapper}>
-                    <SettingsIcon showMenu={showMenu} 
-                        colorTheme={colorTheme} toggleMenuDisp={this.toggleMenuDisp} />
+                    <SettingsIcon 
+                        showMenu={showMenu} 
+                        colorTheme={colorTheme} 
+                        toggleMenuDisp={this.toggleMenuDisp}
+                        setMenuDisp={this.setMenuDisp} />
                 </div>
-                { showMenu && <SettingsMenu {...this.props} /> }
+                { showMenu && <SettingsMenu {...this.props} setMenuDisp={this.setMenuDisp} /> }
             </div>
         )
     }
