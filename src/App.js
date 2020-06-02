@@ -15,6 +15,7 @@ import MyProjects from './Components/MyProjects/MyProjects'
 import Biography from './Components/Biography/Biography'
 import Greeting from './Components/Greeting/Greeting'
 import Error404 from './Components/Error404/Error404'
+import CommonError from './Components/Common/CommonError/CommonError'
 
 // build locale data object
 const locales = { ru, en }
@@ -28,7 +29,20 @@ class App extends React.Component {
    state = {
       spaDisplayMode: false,
       colorTheme: 'blue',
-      locale: 'en'
+      locale: 'en',
+      errors: [],
+      // errors: [{id: 0, message: 'Error!'}],
+      nextErrorId: 0
+   }
+
+   setError = (message) => this.setState(() => ({ 
+      errors: [...this.state.errors, {id: this.state.nextErrorId, message}],
+      nextErrorId: this.state.nextErrorId + 1
+    }))
+   
+    resetError = (id) => {
+      const filteredError = this.state.errors.filter((err) => err.id !== id)
+      this.setState(() => ({errors: filteredError}))
    }
 
    setLocale = (value) => this.setState({ locale: value }, this.saveState)
@@ -57,12 +71,17 @@ class App extends React.Component {
 
    render() {
 
-      const { locale, colorTheme, spaDisplayMode } = this.state
+      const { locale, colorTheme, spaDisplayMode, errors } = this.state
+      const errorsArr = errors.length 
+         ? errors.map((err) => 
+            <CommonError message={err.message} id={err.id} resetError={this.resetError} key={err.id} />)
+         : null
 
       return (
          <IntlProvider locale={locale} messages={locales[locale]} >
             <ColorThemeProvider value={colorTheme}>
                <div className={styles.app + ' ' + styles[`theme_${colorTheme}`]}>
+                  {errors.length > 0 && <div className={styles.errorsBox}>{errorsArr}</div>}
                   <Header
                      setSpaDisplayMode={this.setSpaDisplayMode}
                      spaDisplayMode={spaDisplayMode}
@@ -83,7 +102,8 @@ class App extends React.Component {
                            <Route exact path='/projects'
                               render={() => <MyProjects projects={projects} spaDisplayMode={spaDisplayMode} />} />
                            <Route exact path='/contacts'
-                              render={() => <Contacts locale={locale} spaDisplayMode={spaDisplayMode} />} />
+                              render={() => <Contacts locale={locale} spaDisplayMode={spaDisplayMode} 
+                                                setError={this.setError}/>} />
                            <Route exact render={() => <Error404 spaDisplayMode={spaDisplayMode} />} />
                         </Switch>
                      </div>
@@ -92,7 +112,7 @@ class App extends React.Component {
                         <Biography />
                         <Skills skills={skills} />
                         <MyProjects projects={projects} />
-                        <Contacts locale={locale} />
+                        <Contacts locale={locale} setError={this.setError}/>
                      </div>
                   }
                   <Footer
