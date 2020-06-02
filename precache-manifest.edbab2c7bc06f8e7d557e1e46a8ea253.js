@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "77d9788ab0d5878b4ba456ec4d507c29",
+    "revision": "4bdd5c1f34cf36b7661c8e6dea8eaada",
     "url": "/MyPortfolio/index.html"
   },
   {
@@ -8,32 +8,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyPortfolio/static/css/2.648ed26d.chunk.css"
   },
   {
-    "revision": "8c98130d0cc785ce610e",
-    "url": "/MyPortfolio/static/css/main.deeb6ce7.chunk.css"
+    "revision": "75c6670cb8882edd063f",
+    "url": "/MyPortfolio/static/css/main.27bdf341.chunk.css"
   },
   {
     "revision": "d99c609ee375dc512d0e",
     "url": "/MyPortfolio/static/js/2.11d42f8e.chunk.js"
   },
   {
-    "revision": "8c98130d0cc785ce610e",
-    "url": "/MyPortfolio/static/js/main.c3da89c9.chunk.js"
+    "revision": "75c6670cb8882edd063f",
+    "url": "/MyPortfolio/static/js/main.f8330088.chunk.js"
   },
   {
     "revision": "500045f1b39a112f87a5",
     "url": "/MyPortfolio/static/js/runtime-main.89b6ef0e.js"
   },
   {
-    "revision": "aeb4d4d4c23d7c04c2819ecf90d471dd",
-    "url": "/MyPortfolio/static/media/NetWork.aeb4d4d4.png"
+    "revision": "9083bed66ddffa9c207f15fc5484bc9b",
+    "url": "/MyPortfolio/static/media/NetWork.9083bed6.webp"
   },
   {
-    "revision": "28e7757d69c4ccd574898392f9d2491a",
-    "url": "/MyPortfolio/static/media/Portfolio.28e7757d.png"
+    "revision": "9cf673f16d52346bf293f5393cba487c",
+    "url": "/MyPortfolio/static/media/Portfolio.9cf673f1.webp"
   },
   {
-    "revision": "4aeb863ef71da98545ba17cb98a81a36",
-    "url": "/MyPortfolio/static/media/TasksManager.4aeb863e.png"
+    "revision": "581bf4008bc3d2caa79144c09b52b9f6",
+    "url": "/MyPortfolio/static/media/TasksManager.581bf400.webp"
   },
   {
     "revision": "8c7dad2a165e25c9ed9a478853f60783",
@@ -60,28 +60,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyPortfolio/static/media/js.77fbd761.png"
   },
   {
-    "revision": "163c03113e7f8ece220c50bce7b81398",
-    "url": "/MyPortfolio/static/media/neuro-blue.163c0311.png"
+    "revision": "246ed83cd4859aa3566477548db86a3c",
+    "url": "/MyPortfolio/static/media/neuro-blue.246ed83c.webp"
   },
   {
-    "revision": "899d82f517398afcf2b9cab2415b0a8b",
-    "url": "/MyPortfolio/static/media/neuro-darkRed.899d82f5.png"
+    "revision": "70247ae4533fa4c1916d039affaed49b",
+    "url": "/MyPortfolio/static/media/neuro-darkRed.70247ae4.webp"
   },
   {
-    "revision": "537a8e40a2ea12f8979bd2f4eaf2b571",
-    "url": "/MyPortfolio/static/media/neuro-green.537a8e40.png"
+    "revision": "fb7ead16a8daa9cf7d8725f904ebf67f",
+    "url": "/MyPortfolio/static/media/neuro-green.fb7ead16.webp"
   },
   {
-    "revision": "3e13456aa7c56d82a5d6eb2c224ff9c3",
-    "url": "/MyPortfolio/static/media/neuro-maroon.3e13456a.png"
+    "revision": "36a472ae37776b4851df0ee60ffd7bf0",
+    "url": "/MyPortfolio/static/media/neuro-maroon.36a472ae.webp"
   },
   {
-    "revision": "c01c10388bb4aef3be6ca9f3d8c112f3",
-    "url": "/MyPortfolio/static/media/neuro-violet.c01c1038.png"
+    "revision": "cef8b36283083b8d2225afb66b686e78",
+    "url": "/MyPortfolio/static/media/neuro-violet.cef8b362.webp"
   },
   {
-    "revision": "0112d9d47dc91ff1f7fbe3532901041e",
-    "url": "/MyPortfolio/static/media/photo.0112d9d4.jpg"
+    "revision": "066944fb42c5f696047f2189039da0a8",
+    "url": "/MyPortfolio/static/media/photo.066944fb.webp"
   },
   {
     "revision": "d3021407034ac659827ef3f1ad2603e7",
