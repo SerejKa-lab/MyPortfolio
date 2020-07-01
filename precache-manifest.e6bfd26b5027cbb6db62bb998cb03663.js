@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d8e82a9669a2a44729fc3c368117b11d",
+    "revision": "cf0ea87fb1b87b9481ead2e4b5eec003",
     "url": "/MyPortfolio/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyPortfolio/static/css/2.648ed26d.chunk.css"
   },
   {
-    "revision": "de06c6d8c148124a98fb",
-    "url": "/MyPortfolio/static/css/main.27bdf341.chunk.css"
+    "revision": "5cb3df7b67e4c28cef19",
+    "url": "/MyPortfolio/static/css/main.1b81adf3.chunk.css"
   },
   {
     "revision": "d99c609ee375dc512d0e",
     "url": "/MyPortfolio/static/js/2.11d42f8e.chunk.js"
   },
   {
-    "revision": "de06c6d8c148124a98fb",
-    "url": "/MyPortfolio/static/js/main.86c44969.chunk.js"
+    "revision": "5cb3df7b67e4c28cef19",
+    "url": "/MyPortfolio/static/js/main.dcc16730.chunk.js"
   },
   {
     "revision": "500045f1b39a112f87a5",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9cf673f16d52346bf293f5393cba487c",
     "url": "/MyPortfolio/static/media/Portfolio.9cf673f1.webp"
+  },
+  {
+    "revision": "edee4dbfd1c0e7f8f2296b3b7ab3d05a",
+    "url": "/MyPortfolio/static/media/Starwars.edee4dbf.webp"
   },
   {
     "revision": "581bf4008bc3d2caa79144c09b52b9f6",
