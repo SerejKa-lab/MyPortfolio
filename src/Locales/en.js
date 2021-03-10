@@ -19,8 +19,11 @@ export default {
         of Radio physics and computer technology as radio physicist.`,
   "biography.work_ligo": `From 2008 to 2010 I worked as engineer for installation 
         and maintenance of computer equipment and systems for Ligo LLC.`,
-  "biography.work_yandex": `From 2010 to 2019 I worked as specialist in evaluating the quality 
+  "biography.work_yandex": `From 2010 to 2017 I worked as specialist in evaluating the quality 
         of search algorithms and providing data for machine learning (assessor) for Yandex LLC.`,
+  "biography.work_barksa": `From 2018 to 2020 I worked as engineer for installation 
+  and maintenance of computer equipment and systems for Barksa PUE.`,
+  "biography.work_forte": `From 2020 I have been working as application developer in the React Boilerplate technology stack for ForteGroup.`,
   "biography.personal_qualities.header": "Personal qualities.",
   "biography.personal_qualities": `Open and sociable, responsible and attentive in work. 
         I like to set goals and achieve them. In people I appreciate mutual respect, 
@@ -41,10 +44,12 @@ export default {
   "skills.sass.description":
     "Extending CSS capabilities with the Sass preprocessor",
   "skills.gulp.description": "Building projects with Gulp",
+  "skills.webpack.description": "Building projects with Webpack",
   "skills.jest.description": "Testing with Jest",
   "skills.saga.description": "Application side effects with Redux-Saga",
   "skills.styled.description":
     "Embedding CSS in Javascript with Styled Components",
+  "skills.jira.description": "Project management with Jira",
 
   "projects.header": "My projects",
   "projects.loginMessage.start": `To gain test access to the functionality of the projects, 
@@ -57,6 +62,8 @@ export default {
         react-redux, redux-thunk, react-router-dom, gh-pages`,
   "projects.netWork.description": `Applied libraries: React, Redux, Axios, 
     react-redux, redux-thunk, redux-form, react-router-dom, gh-pages`,
+  "projects.starWars.description": `Applied libraries: react, redux, axios, react-redux, 
+      redux-thunk, react-router-dom, joi, bootstrap, nanoid, gh-pages`,
   "projects.github.title": "Github repository",
   "projects.button.watch": "Watch",
 

@@ -10,6 +10,8 @@ import js from "../Assets/Images/Skills/js.png";
 import saga from "../Assets/Images/Skills/saga.png";
 import styled from "../Assets/Images/Skills/styled.png";
 import jest from "../Assets/Images/Skills/jest.png";
+import webpack from "../Assets/Images/Skills/webpack.png";
+import jira from "../Assets/Images/Skills/jira.png";
 
 export const skills = [
   {
@@ -53,6 +55,10 @@ export const skills = [
     src: gulp,
   },
   {
+    subject: "webpack",
+    src: webpack,
+  },
+  {
     subject: "rest",
     src: rest,
   },
@@ -60,22 +66,31 @@ export const skills = [
     subject: "Git",
     src: git,
   },
+  {
+    subject: "jira",
+    src: jira,
+  },
 ];
 
 export const projects = [
   {
     title: "tasksManager",
-    GHLink: "https://github.com/s-kashko/TasksManager",
-    projectLink: "https://s-kashko.github.io/TasksManager",
+    GHLink: "https://github.com/s-kashko/tasks_manager",
+    projectLink: "https://s-kashko.github.io/tasks_manager",
   },
   {
     title: "netWork",
-    GHLink: "https://github.com/s-kashko/NetWork",
-    projectLink: "https://s-kashko.github.io/NetWork",
+    GHLink: "https://github.com/s-kashko/network",
+    projectLink: "https://s-kashko.github.io/network",
+  },
+  {
+    title: "starWars",
+    GHLink: "https://github.com/s-kashko/starwars",
+    projectLink: "https://s-kashko.github.io/starwars",
   },
   {
     title: "portfolio",
-    GHLink: "https://github.com/s-kashko/MyPortfolio",
-    projectLink: "https://s-kashko.github.io/MyPortfolio",
+    GHLink: "https://github.com/s-kashko/portfolio",
+    projectLink: "https://s-kashko.github.io/portfolio",
   },
 ];

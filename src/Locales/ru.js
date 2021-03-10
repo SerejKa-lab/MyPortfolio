@@ -18,8 +18,11 @@ export default {
         факультет Радиофизики и Компьютерных Технологий по специальности «Радиофизик».`,
   "biography.work_ligo": `С 2008 по 2010 года работал инженером по установке 
         и обслуживанию компьютерного оборудования и систем в ООО «Лиго».`,
-  "biography.work_yandex": `С 2010 по 2019 года работал специалистом по оценке качества 
+  "biography.work_yandex": `С 2010 по 2017 года работал специалистом по оценке качества 
         поисковых алгоритмов и предоставлению данных для машинного обучения (асессор) в ООО «Яндекс».`,
+  "biography.work_barksa": `С 2018 по 2020 работал инженером по установке 
+        и обслуживанию компьютерного оборудования и систем в ЧУП Баркса.`,
+  "biography.work_forte": `С 2020 года работаю разработчиком в наборе технологий React Boilerplate в ForteGroup.`,
   "biography.personal_qualities.header": "Личные качества.",
   "biography.personal_qualities": `Открытый и коммуникабельный, ответственный и внимательный в работе, 
         люблю ставить цели и их достигать. В людях ценю взаимоуважение, доброту и 
@@ -42,11 +45,14 @@ export default {
   "skills.git.description": "Версионный контроль Git",
   "skills.sass.description":
     "Расширение возможностей CSS с препроцессором Sass",
-  "skills.gulp.description": "Сборка проетов с системой Gulp",
+  "skills.gulp.description": "Сборка проектов с системой Gulp",
+  "skills.webpack.description": "Сборка проектов с Webpack",
   "skills.jest.description": "Тестирование с фреймворком Jest",
   "skills.saga.description":
     "Выполнение сайд-эффектов с библиотекой Redux-Saga",
-  "skills.styled.description": "Встраивание CSS кода в Javascript",
+  "skills.styled.description":
+    "Встраивание CSS кода в Javascript с библиотекой Styled Components",
+  "skills.jira.description": "Управление проектом в системе Jira",
 
   "projects.header": "Мои работы",
   "projects.loginMessage.start": `Для получения тестового доступа к функциональности проектов, 
@@ -59,6 +65,8 @@ export default {
         react-redux, redux-thunk, react-router-dom, gh-pages`,
   "projects.netWork.description": `Внедрённые библиотеки: React, Redux, Axios, 
         react-redux, redux-thunk, redux-form, react-router-dom, gh-pages`,
+  "projects.starWars.description": `Внедрённые библиотеки: react, redux, axios, 
+      react-redux, redux-thunk, react-router-dom, joi, bootstrap, nanoid, gh-pages`,
   "projects.github.title": "Гитхаб репозиторий",
   "projects.button.watch": "Смотреть",
 
