@@ -2,7 +2,7 @@ import React from "react";
 import { injectIntl, FormattedMessage } from "react-intl";
 import styles from "./Biography.module.css";
 import ComponentHeader from "../Common/ComponentHeader/ComponentHeader";
-import photo from "../../Assets/Images/Photo/photo.webp";
+import photo from "../../Assets/Images/Photo/photo.png";
 import SPATransition from "../Common/SPATransition/SPATransition";
 
 const Biography = ({ intl, spaDisplayMode }) => {
